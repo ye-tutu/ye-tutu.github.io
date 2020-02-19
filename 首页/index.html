@@ -20,12 +20,12 @@
 <meta property="og:description" content="title: 欢迎来到 ye土土 的博客 欢迎来到 ye土土 的博客                                                                                           L2Dwidget.init({&quot;pluginRootPath&quot;:&quot;live2dw&#x2F;&quot;,&quot;pluginJsPath&quot;:&quot;lib&#x2F;&quot;,&quot;pluginMo">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-02-19T09:39:31.856Z">
-<meta property="article:modified_time" content="2020-02-19T12:53:15.230Z">
+<meta property="article:modified_time" content="2020-02-19T13:03:54.212Z">
 <meta property="article:author" content="ye土土">
 <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/nexmoe/nexmoe.github.io@latest/css/style.css,npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css" crossorigin>
   
-  <!--<link rel="stylesheet" href="/css/style.css?v=1582116823957">-->
+  <!--<link rel="stylesheet" href="/css/style.css?v=1582117460345">-->
 
    
     <style>
@@ -149,7 +149,7 @@
   
   <div class="nexmoe-post-meta" style="margin:10px 0!important;">
     <a><i class="nexmoefont icon-calendar-fill"></i>2020年02月19日</a>
-    <a><i class="nexmoefont icon-areachart"></i>1.2k 字</a>
+    <a><i class="nexmoefont icon-areachart"></i>1k 字</a>
     <a><i class="nexmoefont icon-time-circle-fill"></i>大概 6 分钟</a>
 </div>
 
@@ -193,328 +193,9 @@
     <meta charset="utf-8">
         <style>
 
-<pre><code>&lt;!DOCTYPE html&gt;&lt;html lang=&quot;en&quot;&gt;
-    &lt;head&gt;    
-    &lt;meta charset=&quot;utf-8&quot;&gt;
-        &lt;style&gt;
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br><span class="line">296</span><br><span class="line">297</span><br><span class="line">298</span><br><span class="line">299</span><br><span class="line">300</span><br><span class="line">301</span><br><span class="line">302</span><br><span class="line">303</span><br><span class="line">304</span><br><span class="line">305</span><br><span class="line">306</span><br><span class="line">307</span><br><span class="line">308</span><br><span class="line">309</span><br><span class="line">310</span><br><span class="line">311</span><br><span class="line">312</span><br><span class="line">313</span><br><span class="line">314</span><br><span class="line">315</span><br><span class="line">316</span><br><span class="line">317</span><br><span class="line">318</span><br><span class="line">319</span><br><span class="line">320</span><br><span class="line">321</span><br><span class="line">322</span><br><span class="line">323</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">        <span class="comment">/* 主体 */</span></span></span><br><span class="line">        </span><br><span class="line"><span class="css">        <span class="selector-class">.counter</span> &#123;</span></span><br><span class="line">            width: 396px;</span><br><span class="line">            height: 486px;</span><br><span class="line"><span class="css">            <span class="selector-tag">background-color</span>: <span class="selector-id">#F2F2F2</span>;</span></span><br><span class="line"><span class="css">            <span class="selector-tag">border</span>: 1<span class="selector-tag">px</span> <span class="selector-tag">solid</span> <span class="selector-id">#C2C3C6</span>;</span></span><br><span class="line">            margin: 50px auto;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="comment">/* 显示框 */</span></span></span><br><span class="line">        </span><br><span class="line"><span class="css">        <span class="selector-id">#box</span> &#123;</span></span><br><span class="line">            height: 70px;</span><br><span class="line">            width: 336px;</span><br><span class="line"><span class="css">            <span class="selector-tag">background-color</span>: <span class="selector-id">#323232</span>;</span></span><br><span class="line">            border: none;</span><br><span class="line">            margin: 40px 25px 32px 25px;</span><br><span class="line">            font: 700 40px/70px "微软雅黑";</span><br><span class="line"><span class="css">            <span class="selector-tag">color</span>: <span class="selector-id">#ffffff</span>;</span></span><br><span class="line">            padding-right: 10px;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="comment">/* 功能区 */</span></span></span><br><span class="line">        </span><br><span class="line"><span class="css">        <span class="selector-class">.funct</span> &#123;</span></span><br><span class="line">            padding: 0 20px;</span><br><span class="line">            position: relative;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="comment">/* 按钮样式 */</span></span></span><br><span class="line">        </span><br><span class="line"><span class="css">        <span class="selector-class">.funct</span> <span class="selector-tag">input</span> &#123;</span></span><br><span class="line">            height: 40px;</span><br><span class="line">            width: 60px;</span><br><span class="line">            margin: 10px 10px;</span><br><span class="line">            font: 400 20px/40px "微软雅黑";</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="comment">/* 清除按钮样式 */</span></span></span><br><span class="line">        </span><br><span class="line"><span class="css">        <span class="selector-class">.funct</span> <span class="selector-id">#res</span> &#123;</span></span><br><span class="line">            width: 150px;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="comment">/* + - = . 按钮浮动 */</span></span></span><br><span class="line">        </span><br><span class="line"><span class="css">        <span class="selector-id">#add</span>,</span></span><br><span class="line"><span class="css">        <span class="selector-id">#reduce</span>,</span></span><br><span class="line"><span class="css">        <span class="selector-id">#round</span>,</span></span><br><span class="line"><span class="css">        <span class="selector-id">#sum</span> &#123;</span></span><br><span class="line">            position: absolute;</span><br><span class="line">            right: 0px;</span><br><span class="line">            bottom: 0px;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="comment">/* 减号位置 */</span></span></span><br><span class="line">        </span><br><span class="line"><span class="css">        <span class="selector-id">#reduce</span> &#123;</span></span><br><span class="line">            right: 30px;</span><br><span class="line">            top: 60px;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="comment">/* 加号位置 */</span></span></span><br><span class="line">        </span><br><span class="line"><span class="css">        <span class="selector-id">#add</span> &#123;</span></span><br><span class="line">            right: 30px;</span><br><span class="line">            top: 120px;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="comment">/* 等于号位置 */</span></span></span><br><span class="line">        </span><br><span class="line"><span class="css">        <span class="selector-id">#sum</span> &#123;</span></span><br><span class="line">            height: 100px;</span><br><span class="line">            right: 30px;</span><br><span class="line">            bottom: 0px;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="comment">/* 小数点位置 */</span></span></span><br><span class="line">        </span><br><span class="line"><span class="css">        <span class="selector-id">#round</span> &#123;</span></span><br><span class="line">            right: 120px;</span><br><span class="line">            bottom: 0px;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="comment">/* 0 */</span></span></span><br><span class="line">        </span><br><span class="line"><span class="css">        <span class="selector-id">#zero</span> &#123;</span></span><br><span class="line">            width: 150px;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="comment">/* 数字区 */</span></span></span><br><span class="line">        </span><br><span class="line"><span class="css">        <span class="selector-class">.numb</span> &#123;</span></span><br><span class="line">            width: 280px;</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">        <span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"></span><br><span class="line"><span class="actionscript">            <span class="comment">// 数据容器</span></span></span><br><span class="line"><span class="actionscript">            <span class="keyword">var</span> left = <span class="number">0</span>; <span class="comment">//被除数</span></span></span><br><span class="line"><span class="actionscript">            <span class="keyword">var</span> right = <span class="number">0</span>; <span class="comment">//除数</span></span></span><br><span class="line"><span class="actionscript">            <span class="keyword">var</span> sum = <span class="number">0</span>; <span class="comment">//和  </span></span></span><br><span class="line"></span><br><span class="line"><span class="actionscript">            <span class="keyword">var</span> numb = <span class="number">0</span>; <span class="comment">//此变量用来限制点的输入     </span></span></span><br><span class="line"><span class="actionscript">            <span class="comment">// 获取id并返回</span></span></span><br><span class="line"><span class="javascript">            <span class="function"><span class="keyword">function</span> <span class="title">$</span>(<span class="params">id</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">                <span class="keyword">return</span> <span class="built_in">document</span>.getElementById(id);</span></span><br><span class="line">            &#125;</span><br><span class="line"><span class="actionscript">            <span class="comment">// 运算函数</span></span></span><br><span class="line"><span class="actionscript">            <span class="function"><span class="keyword">function</span> <span class="title">operation</span><span class="params">(id)</span> </span>&#123;</span></span><br><span class="line"><span class="javascript">                <span class="keyword">if</span> ($(<span class="string">"box"</span>).value != <span class="string">"0"</span>) &#123;</span></span><br><span class="line">                    if (left == 0) &#123;</span><br><span class="line"><span class="javascript">                        $(<span class="string">"box"</span>).value = $(<span class="string">"box"</span>).value + $(id).value;</span></span><br><span class="line"><span class="javascript">                        left = <span class="built_in">parseFloat</span>($(<span class="string">"box"</span>).value);</span></span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line"><span class="actionscript">                <span class="comment">//numb 转为number类型 让点可以再输入一次</span></span></span><br><span class="line">                numb = 0;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line"><span class="actionscript">            <span class="comment">// 数字盘函数</span></span></span><br><span class="line"><span class="actionscript">            <span class="function"><span class="keyword">function</span> <span class="title">figure</span><span class="params">(id)</span> </span>&#123;</span></span><br><span class="line"></span><br><span class="line"><span class="actionscript">                <span class="comment">// 判断被除数是否有值</span></span></span><br><span class="line">                if (left == 0) &#123;</span><br><span class="line"><span class="actionscript">                    <span class="comment">// 改变value默认值</span></span></span><br><span class="line"><span class="javascript">                    <span class="keyword">if</span> ($(<span class="string">"box"</span>).value === <span class="string">"0"</span>) &#123;</span></span><br><span class="line"><span class="javascript">                        $(<span class="string">"box"</span>).value = $(id).value;</span></span><br><span class="line"><span class="actionscript">                    &#125; <span class="keyword">else</span> &#123;</span></span><br><span class="line"><span class="javascript">                        $(<span class="string">"box"</span>).value = $(<span class="string">"box"</span>).value + $(id).value;</span></span><br><span class="line">                    &#125;</span><br><span class="line"><span class="actionscript">                &#125; <span class="keyword">else</span> &#123;</span></span><br><span class="line"><span class="javascript">                    $(<span class="string">"box"</span>).value = $(<span class="string">"box"</span>).value + $(id).value;</span></span><br><span class="line"><span class="javascript">                    <span class="keyword">var</span> str = $(<span class="string">"box"</span>).value;</span></span><br><span class="line"><span class="actionscript">                    <span class="keyword">var</span> num = <span class="string">""</span>;</span></span><br><span class="line"><span class="actionscript">                    <span class="comment">// 获取第二次输入的数字</span></span></span><br><span class="line"><span class="actionscript">                    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; str.length; i++) &#123;</span></span><br><span class="line"><span class="actionscript">                        <span class="comment">// 判断加减乘除</span></span></span><br><span class="line"><span class="actionscript">                        <span class="keyword">if</span> (str[i] == <span class="string">"+"</span>) &#123;</span></span><br><span class="line"><span class="actionscript">                            <span class="keyword">for</span> (<span class="keyword">var</span> j = i + <span class="number">1</span>; j &lt; str.length; j++) &#123;</span></span><br><span class="line">                                num += str[j];</span><br><span class="line"></span><br><span class="line">                            &#125;;</span><br><span class="line"><span class="javascript">                            right = <span class="built_in">parseFloat</span>(num);</span></span><br><span class="line"><span class="actionscript">                        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (str[i] == <span class="string">"-"</span>) &#123;</span></span><br><span class="line"><span class="actionscript">                            <span class="keyword">for</span> (<span class="keyword">var</span> j = i + <span class="number">1</span>; j &lt; str.length; j++) &#123;</span></span><br><span class="line">                                num += str[j];</span><br><span class="line"></span><br><span class="line">                            &#125;;</span><br><span class="line"><span class="javascript">                            right = <span class="built_in">parseFloat</span>(num);</span></span><br><span class="line"><span class="actionscript">                        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (str[i] == <span class="string">"*"</span>) &#123;</span></span><br><span class="line"><span class="actionscript">                            <span class="keyword">for</span> (<span class="keyword">var</span> j = i + <span class="number">1</span>; j &lt; str.length; j++) &#123;</span></span><br><span class="line">                                num += str[j];</span><br><span class="line"></span><br><span class="line">                            &#125;;</span><br><span class="line"><span class="javascript">                            right = <span class="built_in">parseFloat</span>(num);</span></span><br><span class="line"><span class="actionscript">                        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (str[i] == <span class="string">"/"</span>) &#123;</span></span><br><span class="line"><span class="actionscript">                            <span class="keyword">for</span> (<span class="keyword">var</span> j = i + <span class="number">1</span>; j &lt; str.length; j++) &#123;</span></span><br><span class="line">                                num += str[j];</span><br><span class="line"></span><br><span class="line">                            &#125;;</span><br><span class="line"><span class="javascript">                            right = <span class="built_in">parseFloat</span>(num);</span></span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;;</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line"><span class="actionscript">                <span class="comment">// 清空所有数据  </span></span></span><br><span class="line">                if (sum != 0) &#123;</span><br><span class="line">                    left = 0;</span><br><span class="line">                    right = 0;</span><br><span class="line">                    sum = 0;</span><br><span class="line">                    numb = 0;</span><br><span class="line"><span class="javascript">                    $(<span class="string">"box"</span>).value = $(id).value;</span></span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="actionscript">            　　　　　　　 <span class="comment">// 数字键盘区----------------------------------------------------------开始</span></span></span><br><span class="line"><span class="javascript">            $(<span class="string">"one"</span>).onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="actionscript">                figure(<span class="string">"one"</span>);</span></span><br><span class="line">            &#125;</span><br><span class="line"><span class="javascript">            $(<span class="string">"two"</span>).onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="actionscript">                figure(<span class="string">"two"</span>);</span></span><br><span class="line">            &#125;</span><br><span class="line"><span class="javascript">            $(<span class="string">"three"</span>).onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="actionscript">                figure(<span class="string">"three"</span>);</span></span><br><span class="line">            &#125;</span><br><span class="line"><span class="javascript">            $(<span class="string">"four"</span>).onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="actionscript">                figure(<span class="string">"four"</span>);</span></span><br><span class="line">            &#125;</span><br><span class="line"><span class="javascript">            $(<span class="string">"five"</span>).onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="actionscript">                figure(<span class="string">"five"</span>);</span></span><br><span class="line">            &#125;</span><br><span class="line"><span class="javascript">            $(<span class="string">"six"</span>).onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="actionscript">                figure(<span class="string">"six"</span>);</span></span><br><span class="line">            &#125;</span><br><span class="line"><span class="javascript">            $(<span class="string">"seven"</span>).onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="actionscript">                figure(<span class="string">"seven"</span>);</span></span><br><span class="line">            &#125;</span><br><span class="line"><span class="javascript">            $(<span class="string">"eight"</span>).onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="actionscript">                figure(<span class="string">"eight"</span>);</span></span><br><span class="line">            &#125;</span><br><span class="line"><span class="javascript">            $(<span class="string">"nine"</span>).onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="actionscript">                figure(<span class="string">"nine"</span>);</span></span><br><span class="line">            &#125;</span><br><span class="line"><span class="javascript">            $(<span class="string">"zero"</span>).onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="actionscript">                figure(<span class="string">"zero"</span>);</span></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line"><span class="actionscript">            　　　　　　 <span class="comment">// 数字键盘区----------------------------------------------------------结束</span></span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="actionscript">            　　　　　　　 <span class="comment">//功能区-----------------------------------------------------------开始</span></span></span><br><span class="line"></span><br><span class="line"><span class="actionscript">            <span class="comment">// 加</span></span></span><br><span class="line"><span class="javascript">            $(<span class="string">"add"</span>).onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="actionscript">                operation(<span class="string">"add"</span>);</span></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="actionscript">            <span class="comment">//减</span></span></span><br><span class="line"><span class="javascript">            $(<span class="string">"reduce"</span>).onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="actionscript">                operation(<span class="string">"reduce"</span>);</span></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line"><span class="actionscript">            <span class="comment">// 乘</span></span></span><br><span class="line"><span class="javascript">            $(<span class="string">"ride"</span>).onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="actionscript">                operation(<span class="string">"ride"</span>);</span></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line"><span class="actionscript">            <span class="comment">// 除</span></span></span><br><span class="line"><span class="javascript">            $(<span class="string">"division"</span>).onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="actionscript">                operation(<span class="string">"division"</span>);</span></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line"><span class="actionscript">            <span class="comment">// 点</span></span></span><br><span class="line"><span class="javascript">            $(<span class="string">"round"</span>).onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="actionscript">                <span class="comment">// 限制点的输入</span></span></span><br><span class="line"><span class="actionscript">                <span class="keyword">if</span> (numb === <span class="number">0</span> &amp;&amp; sum == <span class="number">0</span>) &#123; <span class="comment">//numb值等于0 类型等于number                        </span></span></span><br><span class="line"><span class="javascript">                    $(<span class="string">"box"</span>).value = $(<span class="string">"box"</span>).value + $(<span class="string">"round"</span>).value;</span></span><br><span class="line"><span class="javascript">                    numb = ($(<span class="string">"box"</span>).value); <span class="comment">//numb赋值为字符串</span></span></span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line"><span class="actionscript">            <span class="comment">// 清除</span></span></span><br><span class="line"><span class="javascript">            $(<span class="string">"res"</span>).onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">                <span class="keyword">if</span> ($(<span class="string">"box"</span>).value != <span class="string">"0"</span>) &#123;</span></span><br><span class="line">                    left = 0;</span><br><span class="line">                    right = 0;</span><br><span class="line">                    sum = 0;</span><br><span class="line">                    numb = 0;</span><br><span class="line"><span class="javascript">                    $(<span class="string">"box"</span>).value = <span class="string">"0"</span>;</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line"><span class="actionscript">            <span class="comment">// 求和</span></span></span><br><span class="line"><span class="javascript">            $(<span class="string">"sum"</span>).onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="actionscript">                <span class="keyword">var</span> symbol = <span class="string">""</span>;</span></span><br><span class="line">                if (left != 0 &amp;&amp; right != 0) &#123;</span><br><span class="line"><span class="javascript">                    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; $(<span class="string">"box"</span>).value.length; i++) &#123;</span></span><br><span class="line"><span class="javascript">                        symbol = $(<span class="string">"box"</span>).value[i];</span></span><br><span class="line"><span class="actionscript">                        <span class="keyword">if</span> (symbol == <span class="string">"+"</span>) &#123;</span></span><br><span class="line">                            sum = left + right;</span><br><span class="line"><span class="javascript">                            $(<span class="string">"box"</span>).value = sum;</span></span><br><span class="line"><span class="actionscript">                        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (symbol == <span class="string">"-"</span>) &#123;</span></span><br><span class="line">                            sum = left - right;</span><br><span class="line"><span class="javascript">                            $(<span class="string">"box"</span>).value = sum;</span></span><br><span class="line"><span class="actionscript">                        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (symbol == <span class="string">"*"</span>) &#123;</span></span><br><span class="line">                            sum = left * right;</span><br><span class="line"><span class="javascript">                            $(<span class="string">"box"</span>).value = sum;</span></span><br><span class="line"></span><br><span class="line"><span class="actionscript">                        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (symbol == <span class="string">"/"</span>) &#123;</span></span><br><span class="line">                            sum = left / right;</span><br><span class="line"><span class="javascript">                            $(<span class="string">"box"</span>).value = sum;</span></span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"><span class="actionscript">        　　　　　 <span class="comment">// 功能区--------------------------------------------------------------------------结束</span></span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"counter"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"box"</span> <span class="attr">style</span>=<span class="string">"text-align:right"</span> <span class="attr">readOnly</span>=<span class="string">"true"</span> <span class="attr">value</span>=<span class="string">"0"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"funct"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"reset"</span> <span class="attr">id</span>=<span class="string">"res"</span> <span class="attr">value</span>=<span class="string">"C"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">id</span>=<span class="string">"division"</span> <span class="attr">value</span>=<span class="string">"/"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">id</span>=<span class="string">"ride"</span> <span class="attr">value</span>=<span class="string">"*"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">            <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">id</span>=<span class="string">"add"</span> <span class="attr">value</span>=<span class="string">"+"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">id</span>=<span class="string">"reduce"</span> <span class="attr">value</span>=<span class="string">"-"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">id</span>=<span class="string">"round"</span> <span class="attr">value</span>=<span class="string">"."</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">id</span>=<span class="string">"sum"</span> <span class="attr">value</span>=<span class="string">"="</span>&gt;</span></span><br><span class="line"></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"numb"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">id</span>=<span class="string">"one"</span> <span class="attr">value</span>=<span class="string">"1"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">id</span>=<span class="string">"two"</span> <span class="attr">value</span>=<span class="string">"2"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">id</span>=<span class="string">"three"</span> <span class="attr">value</span>=<span class="string">"3"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">id</span>=<span class="string">"four"</span> <span class="attr">value</span>=<span class="string">"4"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">id</span>=<span class="string">"five"</span> <span class="attr">value</span>=<span class="string">"5"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">id</span>=<span class="string">"six"</span> <span class="attr">value</span>=<span class="string">"6"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">id</span>=<span class="string">"seven"</span> <span class="attr">value</span>=<span class="string">"7"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">id</span>=<span class="string">"eight"</span> <span class="attr">value</span>=<span class="string">"8"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">id</span>=<span class="string">"nine"</span> <span class="attr">value</span>=<span class="string">"9"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">id</span>=<span class="string">"zero"</span> <span class="attr">value</span>=<span class="string">"0"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-            /* 主体 */
-            .counter{
-                width: 396px;
-                height: 486px;
-                background-color: #F2F2F2;
-                border: 1px solid #C2C3C6;
-                margin: 50px auto;
-
-            }
-            /* 显示框 */
-            #box {
-                height: 70px;
-                width: 336px;
-                background-color: #323232;
-                border: none;
-                margin: 40px 25px 32px 25px;
-                font: 700 40px/70px &quot;微软雅黑&quot;;
-                color: #ffffff;
-                padding-right: 10px;
-            }
-            /* 功能区 */
-            .funct {
-                padding: 0 20px;
-                position: relative;
-
-            }
-            /* 按钮样式 */
-            .funct input {
-                height: 40px;
-                width: 60px;
-                margin: 10px 10px;
-                font: 400 20px/40px &quot;微软雅黑&quot;;
-            }
-            /* 清除按钮样式 */
-            .funct #res {
-                width: 150px;
-            }
-            /* + - = . 按钮浮动 */
-            #add, #reduce, #round, #sum {
-                position: absolute;
-                right: 0px;
-                bottom: 0px;
-            }
-            /* 减号位置 */
-            #reduce {
-                right: 30px;
-                top: 60px;
-            }
-
-            /* 加号位置 */
-            #add {
-                right: 30px;
-                top: 120px;
-            }
-            /* 等于号位置 */
-            #sum {
-                height: 100px;
-                right: 30px;
-                bottom: 0px;
-            }
-            /* 小数点位置 */
-            #round {
-                right: 120px;
-                bottom: 0px;
-            }
-            /* 0 */
-            #zero {
-                width: 150px;
-            }
-
-            /* 数字区 */
-            .numb {
-                width: 280px;
-            }
-
-        &lt;/style&gt;
-
-        &lt;script&gt;
-        window.onload = function(){
-
-            // 数据容器
-            var left = 0;   //被除数
-            var right = 0;  //除数
-            var sum = 0;    //和  
-
-            var numb = 0;   //此变量用来限制点的输入     
-            // 获取id并返回
-            function $(id){
-                return document.getElementById(id);
-            }
-            // 运算函数
-             function operation(id){            
-                if( $(&quot;box&quot;).value != &quot;0&quot;){
-                    if(left == 0)
-                    {
-                        $(&quot;box&quot;).value = $(&quot;box&quot;).value + $(id).value;
-                        left = parseFloat($(&quot;box&quot;).value);
-                    }
-                }
-
-                //numb 转为number类型 让点可以再输入一次
-                numb = 0;
-            }
-
-            // 数字盘函数
-            function figure(id){ 
-
-                // 判断被除数是否有值
-                if(left == 0)
-                {
-                    // 改变value默认值
-                    if ($(&quot;box&quot;).value === &quot;0&quot; ) {
-                        $(&quot;box&quot;).value = $(id).value; 
-                    }else{
-                        $(&quot;box&quot;).value = $(&quot;box&quot;).value + $(id).value;    
-                    }                                
-                }else{
-                    $(&quot;box&quot;).value = $(&quot;box&quot;).value + $(id).value;
-                    var str = $(&quot;box&quot;).value;
-                    var num = &quot;&quot;;                    
-                    // 获取第二次输入的数字
-                    for (var i = 0; i &lt; str.length; i++) {
-                        // 判断加减乘除
-                        if(str[i]== &quot;+&quot;){
-                            for (var j = i + 1; j &lt; str.length; j++) {
-                                num+=str[j];
-
-                            };
-                            right = parseFloat(num);
-                        }else if(str[i]== &quot;-&quot;){
-                            for (var j = i + 1; j &lt; str.length; j++) {
-                                num+=str[j];
-
-                            };
-                            right = parseFloat(num);
-                        }
-                        else if(str[i]== &quot;*&quot;){
-                            for (var j = i + 1; j &lt; str.length; j++) {
-                                num+=str[j];
-
-                            };
-                            right = parseFloat(num);
-                        }
-                        else if(str[i]== &quot;/&quot;){
-                            for (var j = i + 1; j &lt; str.length; j++) {
-                                num+=str[j];
-
-                            };
-                            right = parseFloat(num);
-                        }
-                    };                    
-                }
-
-                // 清空所有数据  
-                if(sum != 0){
-                    left = 0;
-                    right = 0;
-                    sum = 0;
-                    numb = 0;
-                    $(&quot;box&quot;).value = $(id).value;
-                }
-
-            }
-
-
-　　　　　　　// 数字键盘区----------------------------------------------------------开始
-            $(&quot;one&quot;).onclick = function(){ 
-                figure(&quot;one&quot;);
-            }
-            $(&quot;two&quot;).onclick = function(){ 
-                figure(&quot;two&quot;);
-            }
-            $(&quot;three&quot;).onclick = function(){ 
-                figure(&quot;three&quot;);
-            }
-            $(&quot;four&quot;).onclick = function(){ 
-                figure(&quot;four&quot;);
-            }
-            $(&quot;five&quot;).onclick = function(){ 
-                figure(&quot;five&quot;);
-            }
-            $(&quot;six&quot;).onclick = function(){ 
-                figure(&quot;six&quot;);
-            }
-            $(&quot;seven&quot;).onclick = function(){ 
-                figure(&quot;seven&quot;);
-            }
-            $(&quot;eight&quot;).onclick = function(){ 
-                figure(&quot;eight&quot;);
-            }
-            $(&quot;nine&quot;).onclick = function(){ 
-                figure(&quot;nine&quot;);
-            }
-            $(&quot;zero&quot;).onclick = function(){ 
-                figure(&quot;zero&quot;);
-            }
-
-　　　　　　  // 数字键盘区----------------------------------------------------------结束
-
-
-
-
-　　　　　　　//功能区-----------------------------------------------------------开始
-
-            // 加
-            $(&quot;add&quot;).onclick = function(){             
-                operation(&quot;add&quot;);
-            }
-
-
-            //减
-            $(&quot;reduce&quot;).onclick = function(){             
-                operation(&quot;reduce&quot;);
-            }
-
-            // 乘
-            $(&quot;ride&quot;).onclick = function(){
-                operation(&quot;ride&quot;);
-            }
-
-            // 除
-            $(&quot;division&quot;).onclick = function(){
-                operation(&quot;division&quot;);
-            }
-
-            // 点
-            $(&quot;round&quot;).onclick = function(){
-                // 限制点的输入
-                if(numb === 0 &amp;&amp; sum == 0){ //numb值等于0 类型等于number                        
-                    $(&quot;box&quot;).value = $(&quot;box&quot;).value + $(&quot;round&quot;).value;
-                    numb = ($(&quot;box&quot;).value); //numb赋值为字符串
-                }
-
-            }
-
-            // 清除
-            $(&quot;res&quot;).onclick = function(){
-                if($(&quot;box&quot;).value != &quot;0&quot;)
-                {                        
-                    left = 0;
-                    right = 0;
-                    sum = 0;
-                    numb = 0;
-                    $(&quot;box&quot;).value = &quot;0&quot;;
-                }
-            }
-
-            // 求和
-            $(&quot;sum&quot;).onclick = function(){  
-                var symbol = &quot;&quot;;           
-                if(left != 0 &amp;&amp; right != 0){
-                    for (var i = 0; i &lt; $(&quot;box&quot;).value.length; i ++ ) {
-                        symbol = $(&quot;box&quot;).value[i];
-                        if(symbol == &quot;+&quot;){
-                            sum = left + right;
-                            $(&quot;box&quot;).value = sum;
-                        }else if(symbol == &quot;-&quot;){
-                            sum = left - right;
-                            $(&quot;box&quot;).value = sum;
-                        }
-                        else if(symbol == &quot;*&quot;){
-                            sum = left * right;
-                            $(&quot;box&quot;).value = sum;
-
-                        }
-                        else if(symbol == &quot;/&quot;){
-                            sum = left / right;
-                            $(&quot;box&quot;).value = sum;
-                        }
-                    };
-                }                            
-            }
-
-        }
-
-　　　　　// 功能区--------------------------------------------------------------------------结束
-
-        &lt;/script&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-
-        &lt;/div&gt;
-
-        &lt;div class=&quot;counter&quot;&gt;
-            &lt;input type=&quot;text&quot; id=&quot;box&quot; style=&quot;text-align:right&quot; readOnly=&quot;true&quot; value=&quot;0&quot;&gt;
-            &lt;div class=&quot;funct&quot;&gt;
-                &lt;input type=&quot;reset&quot; id=&quot;res&quot; value=&quot;C&quot;&gt;
-                &lt;input type=&quot;button&quot; id=&quot;division&quot; value=&quot;/&quot;&gt;
-                &lt;input type=&quot;button&quot; id=&quot;ride&quot; value=&quot;*&quot;&gt;
-
-                &lt;input type=&quot;button&quot; id=&quot;add&quot; value=&quot;+&quot;&gt;
-                &lt;input type=&quot;button&quot; id=&quot;reduce&quot; value=&quot;-&quot;&gt;                                
-                &lt;input type=&quot;button&quot; id=&quot;round&quot; value=&quot;.&quot;&gt;
-                &lt;input type=&quot;button&quot; id=&quot;sum&quot; value=&quot;=&quot;&gt;    
-
-                &lt;div class=&quot;numb&quot;&gt;
-                    &lt;input type=&quot;button&quot; id=&quot;one&quot; value=&quot;1&quot;&gt;
-                    &lt;input type=&quot;button&quot; id=&quot;two&quot; value=&quot;2&quot;&gt;
-                    &lt;input type=&quot;button&quot; id=&quot;three&quot; value=&quot;3&quot;&gt;
-                    &lt;input type=&quot;button&quot; id=&quot;four&quot; value=&quot;4&quot;&gt;
-                    &lt;input type=&quot;button&quot; id=&quot;five&quot; value=&quot;5&quot;&gt;
-                    &lt;input type=&quot;button&quot; id=&quot;six&quot; value=&quot;6&quot;&gt;
-                    &lt;input type=&quot;button&quot; id=&quot;seven&quot; value=&quot;7&quot;&gt;
-                    &lt;input type=&quot;button&quot; id=&quot;eight&quot; value=&quot;8&quot;&gt;
-                    &lt;input type=&quot;button&quot; id=&quot;nine&quot; value=&quot;9&quot;&gt;
-                    &lt;input type=&quot;button&quot; id=&quot;zero&quot; value=&quot;0&quot;&gt;
-                &lt;/div&gt;                        
-            &lt;/div&gt;                            
-        &lt;/div&gt;
-
-    &lt;/body&gt;
-&lt;/html&gt;</code></pre><p>　　　　</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-
+<p>　　　　</p>
 
   </article>
 
@@ -558,7 +239,7 @@
   </div>
   <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js,gh/nexmoe/nexmoe.github.io@latest/js/app.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-<!--<script src="/js/app.js?v=1582116823960"></script>-->
+<!--<script src="/js/app.js?v=1582117460349"></script>-->
 
 
     <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
