@@ -21,7 +21,7 @@
 <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/nexmoe/nexmoe.github.io@latest/css/style.css,npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css" crossorigin>
   
-  <!--<link rel="stylesheet" href="/css/style.css?v=1582512153012">-->
+  <!--<link rel="stylesheet" href="/css/style.css?v=1582512487921">-->
 
    
     <style>
@@ -55,7 +55,7 @@
         </a>
     </div>
     <div class="nexmoe-count">
-        <div><span>Articles</span>4</div>
+        <div><span>Articles</span>5</div>
         <div><span>Tags</span>2</div>
         <div><span>Categories</span>0</div>
     </div>
@@ -136,6 +136,35 @@
   <div id="nexmoe-content">
     <div class="nexmoe-primary">
         <section class="nexmoe-posts">
+    
+    <div class="nexmoe-post">
+        <a href="/%E7%94%A8Python%E6%9F%A5%E8%AF%A2%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85/">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
+                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="用Python查询肺炎疫情" class="lazyload">
+                    <h1>用Python查询肺炎疫情</h1>
+                </div>
+            
+        </a>
+
+        <div class="nexmoe-post-meta">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2020年02月24日</a>
+            <a><i class="nexmoefont icon-areachart"></i>55 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
+        </div>
+
+        <article>
+            
+                <h1 id="用Python查询肺炎疫情"><a href="#用Python查询肺炎疫情" class="headerlink" title="用Python查询肺炎疫情"></a>用Python查询肺炎疫情</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests <span class="keyword">as</span> req</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">GetTotalData</span><span class="params">()</span>:</span></span><br><span class="line">    rq = req.get(<span class="string">'https://view.inews.qq.com/g2/getOnsInfo?name=disease_h5'</span>)</span><br><span class="line">    d=json.loads(rq.json()[<span class="string">'data'</span>])</span><br><span class="line">    <span class="keyword">return</span> (d[<span class="string">'chinaTotal'</span>],d[<span class="string">'chinaAdd'</span>])</span><br></pre></td></tr></table></figure>
+
+<p><strong>代码如上</strong></p>
+<p><strong>感谢 <a href="blog-abudu.tk">啊不都的博客</a></strong></p>
+<p><strong>感谢 <a href="https://shequ.codemao.cn/user/436436" target="_blank" rel="noopener">shyfcka</a></strong></p>
+<p><strong><a href="https://blog-abudu.tk/archives/7f4b992/" target="_blank" rel="noopener">原文链接</a></strong></p>
+
+            
+        </article>
+    </div>
     
     <div class="nexmoe-post">
         <a href="/%E4%B8%8D%E5%87%BA%E9%97%A8%E5%B0%B1%E6%98%AF%E5%AF%B9%E6%88%91%E4%BB%AC%E6%9C%80%E5%A4%A7%E7%9A%84%E6%94%AF%E6%8C%81/">
@@ -265,7 +294,7 @@
   </div>
   <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js,gh/nexmoe/nexmoe.github.io@latest/js/app.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-<!--<script src="/js/app.js?v=1582512153013"></script>-->
+<!--<script src="/js/app.js?v=1582512487922"></script>-->
 
 
     <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
