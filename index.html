@@ -21,7 +21,7 @@
 <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/nexmoe/nexmoe.github.io@latest/css/style.css,npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css" crossorigin>
   
-  <!--<link rel="stylesheet" href="/css/style.css?v=1582551999881">-->
+  <!--<link rel="stylesheet" href="/css/style.css?v=1582595004281">-->
 
    
     <style>
@@ -155,8 +155,7 @@
 
         <article>
             
-                <h1 id="用Python查询肺炎疫情"><a href="#用Python查询肺炎疫情" class="headerlink" title="用Python查询肺炎疫情"></a>用Python查询肺炎疫情</h1><hr>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests,json</span><br><span class="line"><span class="keyword">from</span> tkinter <span class="keyword">import</span> *</span><br><span class="line"><span class="keyword">import</span> base64,os</span><br><span class="line"></span><br><span class="line"><span class="comment">#获取全球疫情数据</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_data</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="comment">#这里使用腾讯api</span></span><br><span class="line">    api = <span class="string">'https://view.inews.qq.com/g2/getOnsInfo?name=disease_h5'</span></span><br><span class="line">    data = requests.get(api)</span><br><span class="line">    <span class="comment">#要使用utf8不然会中文乱码</span></span><br><span class="line">    data.encoding = <span class="string">'utf-8'</span></span><br><span class="line">    <span class="comment">#需loads两次不知道为什么</span></span><br><span class="line">    data = json.loads(data.text)</span><br><span class="line">    data = json.loads(data[<span class="string">'data'</span>])[<span class="string">"areaTree"</span>]</span><br><span class="line">    <span class="comment">#print(data)</span></span><br><span class="line">    <span class="keyword">return</span> data</span><br></pre></td></tr></table></figure>
+                <h2 id="用Python查询肺炎疫情"><a href="#用Python查询肺炎疫情" class="headerlink" title="用Python查询肺炎疫情"></a>用Python查询肺炎疫情</h2>
             
         </article>
     </div>
@@ -180,7 +179,6 @@
         <article>
             
                 <h2 id="不出门就是对我们最大的支持"><a href="#不出门就是对我们最大的支持" class="headerlink" title="不出门就是对我们最大的支持"></a>不出门就是对我们最大的支持</h2><p>​                                                   <strong>因为新型冠状病毒肺炎的突袭，学校延长假期，越来越多愿意为防控疫情做贡献的人忙碌了起来。</strong></p>
-<p>​                                                   <strong>今天是我宅在家的第八天，但我明显越来越不耐烦了，正当我躺在沙发上抱怨时，刚刚买菜的爸爸回来了：“别耍小脾气了，你知道吗，小区门口有人在24小时值守。”“真的吗，他们太辛苦了，我拿两杯牛奶给他们吧。”我说，“趁机去楼下呼吸下新鲜空气。”我想着。</strong></p>
             
         </article>
     </div>
@@ -203,10 +201,7 @@
 
         <article>
             
-                <h2 id="个人资料"><a href="#个人资料" class="headerlink" title="个人资料"></a>个人资料</h2><h3 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h3><p>昵称：ye土土</p>
-<p>QQ：2093142951</p>
-<p>邮箱：<a href="mailto:2093142951@qq.com">2093142951@qq.com</a></p>
-<p>微信：yueye58821</p>
+                <h2 id="个人资料"><a href="#个人资料" class="headerlink" title="个人资料"></a>个人资料</h2>
             
         </article>
     </div>
@@ -229,10 +224,18 @@
 
         <article>
             
-                <p><a href="https://leohan666.github.io/" target="_blank" rel="noopener"><strong>友情链接：Leo韩的网站</strong></a></p>
+                <a id="more"></a>
+
+<p><a href="https://leohan666.github.io/" target="_blank" rel="noopener"><strong>友情链接：Leo韩的网站</strong></a></p>
 <p><strong><a href="https://bcmmc.github.io/" target="_blank" rel="noopener">友情链接：Mcivcub的网站</a></strong></p>
 <p><strong><a href="https://zy.lengku.cf/" target="_blank" rel="noopener">友情链接：智鸢工作室</a></strong></p>
 <p><a href="https://tools.syrathon.com/" target="_blank" rel="noopener"><strong>友情链接：Syrathon Tools</strong></a></p>
+<p><strong><a href="http://shyfcka.ddns.net:81/" target="_blank" rel="noopener">友情链接：Box3图形化编辑器</a></strong></p>
+<p><strong><a href="https://toby.amazingcode.top/" target="_blank" rel="noopener">友情链接：Toby的博客</a></strong></p>
+<p><strong><a href="https://xianyubk.github.io/" target="_blank" rel="noopener">友情链接：咸鱼报刊</a></strong></p>
+<p><strong><a href="https://olympic-ao.github.io/" target="_blank" rel="noopener">友情链接：袁奥工作室的网站</a></strong></p>
+<p><strong><a href="https://blog-abudu.tk/" target="_blank" rel="noopener">友情链接：啊不都的博客</a></strong></p>
+
             
         </article>
     </div>
@@ -243,7 +246,7 @@
   </div>
   <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js,gh/nexmoe/nexmoe.github.io@latest/js/app.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-<!--<script src="/js/app.js?v=1582551999883"></script>-->
+<!--<script src="/js/app.js?v=1582595004287"></script>-->
 
 
     <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
