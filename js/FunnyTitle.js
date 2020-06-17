@@ -11,8 +11,10 @@ document.addEventListener('visibilitychange', function () {
         $('[rel="icon"]').attr('href', "/favicon.ico");
         document.title = '(ฅ>ω<*ฅ) 噫又好啦 ~';
         titleTime = setTimeout(function () {
-            document.title = 'ye土土的博客';
+            document.title = ' - ye土土的小屋 ';
         }, 2000);
     }
 });
+
+
 
