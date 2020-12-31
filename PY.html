@@ -12,26 +12,26 @@
   
 
   <link rel="shortcut icon" href="/3.png" type="image/png" />
-  <meta name="description" content="说说   html,   #main {     background-color: #E7EDED; }  .avatar img {     width: 40px;     height: 40px;     border-radius: 50%; }  #messages {     overflow: auto;     flex-grow: 2;     padding: 10px;">
+  <meta name="description" content="说说   body {      box-shadow: 0 0 20px #909090;     font-family: &quot;Roboto&quot; sans-serif;     color: #252525; } a.btn-icon {     text-decoration: none;     vertical-align: middle;     float: left; } a.btn-">
 <meta property="og:type" content="website">
 <meta property="og:title" content="说说">
 <meta property="og:url" content="http://ye-tutu.tk/PY.html">
 <meta property="og:site_name" content="ye土土的小屋">
-<meta property="og:description" content="说说   html,   #main {     background-color: #E7EDED; }  .avatar img {     width: 40px;     height: 40px;     border-radius: 50%; }  #messages {     overflow: auto;     flex-grow: 2;     padding: 10px;">
+<meta property="og:description" content="说说   body {      box-shadow: 0 0 20px #909090;     font-family: &quot;Roboto&quot; sans-serif;     color: #252525; } a.btn-icon {     text-decoration: none;     vertical-align: middle;     float: left; } a.btn-">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://ye-tutu.tk/3.jpg">
-<meta property="og:image" content="http://ye-tutu.tk/3.jpg">
-<meta property="og:image" content="http://ye-tutu.tk/3.jpg">
-<meta property="og:image" content="http://ye-tutu.tk/3.jpg">
-<meta property="og:image" content="http://ye-tutu.tk/3.jpg">
+<meta property="og:image" content="https://ye-tutu.tk/3.jpg">
+<meta property="og:image" content="https://ye-tutu.tk/3.jpg">
+<meta property="og:image" content="https://ye-tutu.tk/3.jpg">
+<meta property="og:image" content="https://ye-tutu.tk/3.jpg">
+<meta property="og:image" content="https://ye-tutu.tk/3.jpg">
 <meta property="article:published_time" content="2020-11-09T12:46:25.000Z">
 <meta property="article:modified_time" content="2020-11-09T12:46:25.000Z">
 <meta property="article:author" content="ye土土">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://ye-tutu.tk/3.jpg">
+<meta name="twitter:image" content="https://ye-tutu.tk/3.jpg">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css?v=233" crossorigin>
   
-  <link rel="stylesheet" href="/css/style.css?v=1608976571621">
+  <link rel="stylesheet" href="/css/style.css?v=1609425460519">
   <script data-ad-client="ca-pub-6738955146442712" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <title>说说 - ye土土的小屋</title>
   <!--浏览器搞笑标题-->
@@ -223,136 +223,231 @@
     <h2>说说</h2>
 <head>
 <style>
-html,
+body {
 
-
-#main {
-    background-color: #E7EDED;
+    box-shadow: 0 0 20px #909090;
+    font-family: "Roboto" sans-serif;
+    color: #252525;
 }
-
-.avatar img {
-    width: 40px;
-    height: 40px;
+a.btn-icon {
+    text-decoration: none;
+    vertical-align: middle;
+    float: left;
+}
+a.btn-icon.right {
+    float: right;
+}
+a.btn-icon i:after {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    color: #252525;
+    font-size: 120%;
+}
+i.back:after {
+    content: '\f053';
+}
+i.edit:after {
+    content: '\f044';
+}
+i.send:after {
+    content: '\f061';
+}
+i.chat:after {
+    content: '\f086';
+}
+i.user:after {
+    content: '\f007';
+}
+i.settings:after {
+    content: '\f1de';
+}
+a.btn-big i:after {
+    font-size: 200%;
+    color: #aaa;
+}
+a.active i:after {
+    color: #4BDB9C;
+}
+header {
+    padding: 1.5em 1em;
+}
+.header-label {
+    font-weight: 700;
+    font-size: 120%;
+    display: block;
+    text-align: center;
+}
+#content {
+    overflow-y: scroll;
+    max-height: 600px;
+    padding: 1em 2em 0;
+    background: linear-gradient(#F4F5F7 30%, rgba(244, 245, 247, 0)), linear-gradient(rgba(244, 245, 247, 0), #F4F5F7 70%) 0 100%, radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)) 0 100%;
+    background: linear-gradient(#F4F5F7 30%, rgba(244, 245, 247, 0)), linear-gradient(rgba(244, 245, 247, 0), #F4F5F7 70%) 0 100%, radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)) 0 100%;
+    background-repeat: no-repeat;
+    background-color: #F4F5F7;
+    background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
+    background-attachment: local, local, scroll, scroll;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.message-container {
+    margin-bottom: 3em;
+    margin-left: 4em;
+    position: relative;
+}
+.pic-container {
+    position: absolute;
+    left: -75px;
+}
+.pic-container img,
+.pic-container .status {
     border-radius: 50%;
+    max-width: 60px;
 }
-
-#messages {
-    overflow: auto;
-    flex-grow: 2;
-    padding: 10px;
+.pic-container .status {
+    background-color: #4BDB9C;
+    width: 12px;
+    height: 12px;
+    border: solid 3px white;
+    position: absolute;
+    top: 0;
 }
-#messages article {
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 20px;
+h3.name {
+    margin: 0 0 0.8em;
+    font-weight: 300;
+    font-size: 110%;
+    color: #252525;
 }
-
-
-.msg {
-    display: flex;
-    justify-content: space-between;
+.message {
+    background: white;
+    padding: 1em 1.3em;
+    border-radius: 10px;
 }
-.msg .tri {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 10px 15px 0;
-    border-color: transparent #ffffff transparent transparent;
+.message p {
+    margin: 0;
+    line-height: 180%;
+    font-size: 100%;
+    color: #6f6f6f;
 }
-.msg_inner {
-    background-color: #fff;
+.time {
+    font-size: 90%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 0.8em;
+    color: #aaa;
+}
+input {
+    padding: 1.5em 3em 1.5em 1em;
+    border: none;
     width: 100%;
-    padding: 15px 10px;
-    border-radius: 0 4px 4px 4px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: left;
+    box-sizing: border-box;
 }
-
-
+.editor {
+    position: relative;
+    border-bottom: solid 1px #aaa;
+}
+.editor a {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+.tab {
+    width: 32%;
+    display: inline-block;
+}
+.tab a {
+    width: 100%;
+    padding: 1.5em 0;
+    text-align: center;
+}
+.credits {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #6f6f6f;
+    font-size: 100%;
+}
 </style>
 <meta name="generator" content="Hexo 4.2.0"></head>
 <body>
+<script type="text/javascript" src="https://wow.techbrood.com/libs/jquery/jquery-2.1.1.min.js"></script><script src="https://wow.techbrood.com/libs/jquery/jquery-1.11.1.min.js"></script>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
 
+<div id="content">
+    <h1>  </h1>
+    <div class="message-container">
+        <div class="pic-container">
+            <img data-sizes="auto" data-src="https://ye-tutu.tk/3.jpg" alt="" class="lazyload">
+            <div class="status"></div>
+        </div>
+        <h3 class="name">ye-tutu</h3>
+        <div class="message">
+            <p>2020的最后一分钟（哔哩哔哩跨晚ing）<img src = "/img/say/2.png" style="zoom: 20%;" ></img></p>
+        </div>
+        <div class="time"><span>2020/12/31 11:59 PM</span>
+        </div>
+    </div>
 
-<section id="container">
-    <section id="main">
-        <section id="messages">
-        	<p><strong>12月23日  星期三  有点冷</strong></p>
-            <article>
-                <div class="avatar">
-                    <img alt="avatar" src="/3.jpg" />
-                </div>
-                <div class="msg">
-                    <div class="tri"></div>
-                    <div class="msg_inner">论我的月考成绩为何会如此糟糕</div>
-                </div>
-            </article>
-            <hr>
-        	<p><strong>11月11日  星期三  天气晴</strong></p>
-            <article>
-                <div class="avatar">
-                    <img alt="avatar" src="/3.jpg" />
-                </div>
-                <div class="msg">
-                    <div class="tri"></div>
-                    <div class="msg_inner">半期考加油！！！</div>
-                </div>
-            </article>
-            <hr>
-            <p><strong>11月10日  星期二  天气晴</strong></p>
-            <article>
-                <div class="avatar">
-                    <img alt="avatar" src="/3.jpg" />
-                </div>
-                <div class="msg">
-                    <div class="tri"></div>
-                    <div class="msg_inner">研究了半天，发现不是git的问题，是博客文件夹的问题，白白重装一遍，累死了<img src = "https://cdn.jsdelivr.net/gh/GamerNoTitle/ValineCDN/alu/%E5%96%9C%E6%9E%81%E8%80%8C%E6%B3%A3.png" style="zoom: 50%;" ></img></div>
-                </div>
-            </article>
-            <hr>
-        	<p><strong>11月9日  星期一  天气晴</strong></p>
-            <article>
-                <div class="avatar">
-                    <img src = "/3.png" style="zoom: 100%;" ></img>
-                </div>
-                <div class="msg">
-                    <div class="tri"></div>
-                    <div class="msg_inner">啊啊啊，后天就要半期考了呀</div>
-                </div>
-            </article>
-            <hr>
-        	<p><strong>11月6日  星期五  天气晴</strong></p>
-            <article>
-                <div class="avatar">
-                    <img alt="avatar" src="/3.jpg" />
-                </div>
-                <div class="msg">
-                    <div class="tri"></div>
-                    <div class="msg_inner">第一次学习电子板绘（画之前画布尺寸没调好，放大会有点糊，有点丑）<img src = "/img/say/1.png" style="zoom: 50%;" ></img></div>
-                </div>
-            </article>
-            <hr>
-        	<p><strong>11月3日  星期二  天气晴</strong></p>
-            <article>
-                <div class="avatar">
-                    <img alt="avatar" src="/3.jpg" />
-                </div>
-                <div class="msg">
-                    <div class="tri"></div>
-                    <div class="msg_inner">分享一些好听的歌：
+    <div class="message-container">
+        <div class="pic-container">
+            <img data-sizes="auto" data-src="https://ye-tutu.tk/3.jpg" alt="" class="lazyload">
+            <div class="status"></div>
+        </div>
+        <h3 class="name">ye-tutu</h3>
+        <div class="message">
+            <p>论我的月考成绩为何会如此糟糕</p>
+        </div>
+        <div class="time"><span>2020/12/23 7:23 PM</span>
+        </div>
+    </div>
+
+    <div class="message-container">
+        <div class="pic-container">
+            <img data-sizes="auto" data-src="https://ye-tutu.tk/3.jpg" alt="" class="lazyload">
+            <div class="status"></div>
+        </div>
+        <h3 class="name">ye-tutu</h3>
+        <div class="message">
+            <p>研究了半天，发现不是git的问题，是博客文件夹的问题，白白重装一遍，累死了<img src = "https://cdn.jsdelivr.net/gh/GamerNoTitle/ValineCDN/alu/%E5%96%9C%E6%9E%81%E8%80%8C%E6%B3%A3.png" style="zoom: 50%;" ></img></p>
+        </div>
+        <div class="time"><span>2020/11/10 8:31 PM</span>
+        </div>
+    </div>
+    <div class="message-container">
+        <div class="pic-container">
+            <img data-sizes="auto" data-src="https://ye-tutu.tk/3.jpg" alt="" class="lazyload">
+            <div class="status"></div>
+        </div>
+        <h3 class="name">ye-tutu</h3>
+        <div class="message">
+            <p>第一次学习电子板绘（画之前画布尺寸没调好，放大会有点糊，有点丑）<img src = "/img/say/1.png" style="zoom: 50%;" ></img></p>
+        </div>
+        <div class="time"><span>2020/11/6 8:20 PM</span>
+        </div>
+    </div>
+    <div class="message-container">
+        <div class="pic-container">
+            <img data-sizes="auto" data-src="https://ye-tutu.tk/3.jpg" alt="" class="lazyload">
+            <div class="status"></div>
+        </div>
+        <h3 class="name">ye-tutu</h3>
+        <div class="message">
+            <p>分享一些好听的歌：
                     <div class="aplayer"  data-id="41648129" data-server="netease" data-type="song" autoplay="true" data-mode="single" mutex="true"></div>
-					<div class="aplayer"  data-id="1436709403" data-server="netease" data-type="song" autoplay="true" data-mode="single" mutex="true"></div>
-					<div class="aplayer"  data-id="1427919827" data-server="netease" data-type="song" autoplay="true" data-mode="single" mutex="true"></div>
-				    <div class="aplayer"  data-id="1490098724" data-server="netease" data-type="song" autoplay="true" data-mode="single" mutex="true"></div>
-				    <div class="aplayer"  data-id="1389041351" data-server="netease" data-type="song" autoplay="true" data-mode="single" mutex="true"></div></div>
-                </div>
-            </article>
-        </section>
-        <footer>
-<script>
-
-</script>
-<hr>
+                    <div class="aplayer"  data-id="1436709403" data-server="netease" data-type="song" autoplay="true" data-mode="single" mutex="true"></div>
+                    <div class="aplayer"  data-id="1427919827" data-server="netease" data-type="song" autoplay="true" data-mode="single" mutex="true"></div>
+                    <div class="aplayer"  data-id="1490098724" data-server="netease" data-type="song" autoplay="true" data-mode="single" mutex="true"></div>
+                    <div class="aplayer"  data-id="1389041351" data-server="netease" data-type="song" autoplay="true" data-mode="single" mutex="true"></div></p>
+        </div>
+        <div class="time"><span>2020/11/3 9:45 PM</span>
+        </div>
+    </div>
+            <hr>
+    <p style="text-align:center;">
+    <span style="color:#666666;font-size:13px;">我也是有底线的哦~~</span>
+    </p>
+</div>
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/haruto.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/haruto.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>
 
 
@@ -413,7 +508,7 @@ textarea[id='veditor']::placeholder{
 
 
 <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
- <script src="/js/app.js?v=1608976571625"></script>
+ <script src="/js/app.js?v=1609425460524"></script>
 
   
 
