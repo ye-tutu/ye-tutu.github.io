@@ -1,5 +1,3 @@
-
-
 const getRealPath = (pathname, desc = false) => {
   if (!pathname) {
     pathname = window.location.pathname;
@@ -31,13 +29,9 @@ for (let link of links) {
   }
 }
 
-var $ = mdui.JQ;
 $("table")
   .has("img")
   .addClass("nexmoe-album");
-
-$("#nexmoe-sidebar a").addClass("mdui-ripple");
-mdui.mutation();
 
 function search() {
   window.open($("#search_form").attr("action_e") + " " + $("#search_value").val());
