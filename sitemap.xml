@@ -501,6 +501,27 @@
 
   
   <url>
+    <loc>https://hi-tutu.top/tags/2020/</loc>
+    <lastmod>2021-03-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hi-tutu.top/tags/2021/</loc>
+    <lastmod>2021-03-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hi-tutu.top/tags/%E6%96%B0%E5%B9%B4%E6%80%BB%E7%BB%93/</loc>
+    <lastmod>2021-03-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://hi-tutu.top/tags/%E7%96%AB%E6%83%85/</loc>
     <lastmod>2021-03-06</lastmod>
     <changefreq>daily</changefreq>
@@ -571,27 +592,6 @@
   </url>
   
   <url>
-    <loc>https://hi-tutu.top/tags/2020/</loc>
-    <lastmod>2021-03-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://hi-tutu.top/tags/2021/</loc>
-    <lastmod>2021-03-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://hi-tutu.top/tags/%E6%96%B0%E5%B9%B4%E6%80%BB%E7%BB%93/</loc>
-    <lastmod>2021-03-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://hi-tutu.top/tags/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2021-03-06</lastmod>
     <changefreq>daily</changefreq>
@@ -634,6 +634,13 @@
   </url>
   
   <url>
+    <loc>https://hi-tutu.top/tags/%E4%BD%9C%E6%96%87/</loc>
+    <lastmod>2021-03-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://hi-tutu.top/tags/%E8%AF%BB%E4%B9%A6/</loc>
     <lastmod>2021-03-06</lastmod>
     <changefreq>daily</changefreq>
@@ -662,20 +669,6 @@
   </url>
   
   <url>
-    <loc>https://hi-tutu.top/tags/%E4%BD%9C%E6%96%87/</loc>
-    <lastmod>2021-03-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://hi-tutu.top/tags/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9/</loc>
-    <lastmod>2021-03-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://hi-tutu.top/tags/vmware/</loc>
     <lastmod>2021-03-06</lastmod>
     <changefreq>daily</changefreq>
@@ -697,6 +690,13 @@
   </url>
   
   <url>
+    <loc>https://hi-tutu.top/tags/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9/</loc>
+    <lastmod>2021-03-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://hi-tutu.top/tags/python/</loc>
     <lastmod>2021-03-06</lastmod>
     <changefreq>daily</changefreq>
@@ -705,34 +705,6 @@
   
   <url>
     <loc>https://hi-tutu.top/tags/exe/</loc>
-    <lastmod>2021-03-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://hi-tutu.top/tags/%E8%A7%86%E9%A2%91/</loc>
-    <lastmod>2021-03-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://hi-tutu.top/tags/%E6%8A%A0%E5%9B%BE/</loc>
-    <lastmod>2021-03-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://hi-tutu.top/tags/html/</loc>
-    <lastmod>2021-03-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://hi-tutu.top/tags/%E8%BD%AC%E8%BD%BD/</loc>
     <lastmod>2021-03-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -752,7 +724,42 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>https://hi-tutu.top/tags/%E8%BD%AC%E8%BD%BD/</loc>
+    <lastmod>2021-03-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hi-tutu.top/tags/%E8%A7%86%E9%A2%91/</loc>
+    <lastmod>2021-03-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hi-tutu.top/tags/html/</loc>
+    <lastmod>2021-03-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hi-tutu.top/tags/%E6%8A%A0%E5%9B%BE/</loc>
+    <lastmod>2021-03-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
+  
+  <url>
+    <loc>https://hi-tutu.top/categories/%E5%85%B6%E4%BB%96/</loc>
+    <lastmod>2021-03-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
   <url>
     <loc>https://hi-tutu.top/categories/%E7%94%9F%E6%B4%BB/</loc>
@@ -770,13 +777,6 @@
   
   <url>
     <loc>https://hi-tutu.top/categories/%E5%BA%94%E7%94%A8%E6%8E%A8%E8%8D%90/</loc>
-    <lastmod>2021-03-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://hi-tutu.top/categories/%E5%85%B6%E4%BB%96/</loc>
     <lastmod>2021-03-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
