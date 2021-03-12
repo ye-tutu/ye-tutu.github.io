@@ -63,35 +63,6 @@
     
     <entry>
       <title> </title>
-      <link href="/archives/20200726/"/>
-      <url>/archives/20200726/</url>
-      
-        <content type="html"><![CDATA[<h2 id="windows批量修改文件后缀名"><a href="#windows批量修改文件后缀名" class="headerlink" title="windows批量修改文件后缀名"></a>windows批量修改文件后缀名</h2><a id="more"></a><p>当一个文件夹下有多种格式的文件时，就会存在多个文件后缀名， </p><p>总不能一个个去改吧</p><p>那该如何批量将文件修改成一样的后缀名呢</p><h3 id="整理"><a href="#整理" class="headerlink" title="整理"></a>整理</h3><p>将要统一后缀名的文件放到同一文件夹里</p><p><img src = "https://ye-tutu.tk/img/picture/20200726/1.png" style="zoom: 100%;" ></img></p><h3 id="新建"><a href="#新建" class="headerlink" title="新建"></a>新建</h3><p>在文件夹中新建一个文本文档</p><p>用windows系统自带的记事本打开它</p><p>格式如下：</p><p><img src = "https://ye-tutu.tk/img/picture/20200726/2.png" style="zoom: 50%;" ></img></p><p>例如：</p><p>我想将图片文件从png转到jpg格式，就要输入</p><pre><code class="cmd">ren *.png    *.jpg</code></pre><h3 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h3><p>同时按下Ctrl+Shift+S</p><p>另存为文件</p><p><img src = "https://ye-tutu.tk/img/picture/20200726/3.png" style="zoom: 100%;" ></img></p><p><strong>注意：文件后缀名要为 .bat</strong></p><p>​            <strong>保存类型选择“所有文件”（如上图）</strong></p><p>保存后<strong>关闭</strong>记事本（一定要关闭记事本，否则无法运行）</p><p>双击刚刚保存的文件（如下图），最好右键单击，选择“以管理员身份运行”</p><p><img src = "https://ye-tutu.tk/img/picture/20200726/4.png" style="zoom: 80%;" ></img></p><p>然后打开那个文件夹你就会发现成功将文件的后缀名统一了</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 实用技巧 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> windows </tag>
-            
-            <tag> 文件后缀名 </tag>
-            
-            <tag> cmd </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title> </title>
       <link href="/archives/20200719/"/>
       <url>/archives/20200719/</url>
       
@@ -235,31 +206,6 @@
     
     <entry>
       <title> </title>
-      <link href="/archives/7c26e355/"/>
-      <url>/archives/7c26e355/</url>
-      
-        <content type="html"><![CDATA[<h2 id="哔哩哔哩-只听过2233不知道6699？"><a href="#哔哩哔哩-只听过2233不知道6699？" class="headerlink" title="哔哩哔哩-只听过2233不知道6699？"></a>哔哩哔哩-只听过2233不知道6699？</h2><a id="more"></a><p>2233是基于现在ACG圈娘化风而创造出来的女性角色，但<a href="https://bilibili.com" target="_blank" rel="noopener">bilibili</a>想趁着愚人节这个机会来放飞一波自我，就要把2233变成可爱的男孩子。</p><p><img src = "https://i.loli.net/2020/04/14/SfDOk84wpLRWKh1.png" style="zoom: 33%;" ></img></p><p>取二倍，4466，不好听；取三倍，6699，哎，好听上口，再搭配上基于2233原型改的两个可爱的男孩子的人设——OK。（大概是这样吧）</p><p><img src = "https://i.loli.net/2020/04/12/PgCzcvasIEotwjO.jpg" style="zoom: 20%;" ></img></p><p>就这样，B站新站郎6699正式出道！</p><p><img src = "https://i.loli.net/2020/04/14/UPo6BCeARbupSIr.png" style="zoom: 80%;" ></img></p><p>（话说官方还真皮啊）<img src = "https://i.loli.net/2020/03/05/7CXwIoHxunLdVFg.png"></img></p><p><img src = "https://i.loli.net/2020/04/14/4tRMbxUln6geSu2.gif"  ></img></p><p>这就是为什么6699和2233除了性别其他设定都一样的原因了</p><p>据说，有人认为6699出道后会把2233淘汰掉，但这都是不可能哒</p><p>22是个阳光元气娘，火拼有精神。对人热情、热心，但有些冒失。</p><p>33个性沉默寡言，情感冷静少起伏且表情缺乏变化，稍有些腹黑，机娘，需要充电。</p><p>两位都是二次元 爱好者，喜爱看各种带弹幕吐槽的视频。22的技能是审核视频。偶尔还会修修播放器（但</p><p>往往会有BUG，需要33娘二次修复） 。33的技能则类似于程序猿，拥有惊人的知识量和能力额头上有个成像仪，可以作为投影使用。</p><p>关于两人的设定区别还是蛮多的，例如发色，22娘的发色是深蓝色，呆毛是闪电状。33的是浅蓝色，呆毛是月牙状。</p><p>（资料转自百度百科，如果没错的话6699的设定也一样）</p><p><img src = "https://i.loli.net/2020/04/14/PGwZkCDr6nfhvmQ.jpg" style="zoom:67%;" ></img></p><p>话说本人也是在网络上无意发现他俩的呢</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 百科 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 哔哩哔哩 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title> </title>
       <link href="/archives/9ca846ed/"/>
       <url>/archives/9ca846ed/</url>
       
@@ -287,37 +233,6 @@
     
     <entry>
       <title> </title>
-      <link href="/archives/63a3b775/"/>
-      <url>/archives/63a3b775/</url>
-      
-        <content type="html"><![CDATA[<h2 id="win10开启黑白滤镜"><a href="#win10开启黑白滤镜" class="headerlink" title="win10开启黑白滤镜"></a>win10开启黑白滤镜</h2><a id="more"></a><p>2020年4月4日，</p><p>灰色，</p><p>成为这一天的主色调，</p><p>那win10如何开启黑白滤镜呢</p><h2 id="打开win10设置"><a href="#打开win10设置" class="headerlink" title="打开win10设置"></a>打开win10设置</h2><p>右键单击任务栏win10图标，</p><p>选择“设置”，</p><p><img src = "https://i.bmp.ovh/imgs/2020/04/ba1cc74b6341f8e8.png" style="zoom: 200%;" ></img></p><h2 id="轻松使用"><a href="#轻松使用" class="headerlink" title="轻松使用"></a>轻松使用</h2><p>打开“轻松使用”</p><p>选择模块“颜色滤镜”</p><p><img src = "https://i.bmp.ovh/imgs/2020/04/1292b9558adb873f.png" style="zoom: 200%;" ></img></p><p>打开颜色滤镜</p><p>就可以发现自己电脑的界面全部变成黑白的啦</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 实用技巧 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 哀悼 </tag>
-            
-            <tag> windows </tag>
-            
-            <tag> 黑白 </tag>
-            
-            <tag> 滤镜 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title> </title>
       <link href="/archives/9120ca56/"/>
       <url>/archives/9120ca56/</url>
       
@@ -333,13 +248,13 @@
       
         <tags>
             
-            <tag> 本地 </tag>
-            
             <tag> 推荐 </tag>
             
-            <tag> 哔哩哔哩 </tag>
+            <tag> 本地 </tag>
             
             <tag> 视频 </tag>
+            
+            <tag> 哔哩哔哩 </tag>
             
         </tags>
       
@@ -393,9 +308,9 @@
       
         <tags>
             
-            <tag> 博客 </tag>
-            
             <tag> 工具 </tag>
+            
+            <tag> 博客 </tag>
             
             <tag> wordpress </tag>
             
@@ -422,9 +337,9 @@
       
         <tags>
             
-            <tag> 博客 </tag>
-            
             <tag> 工具 </tag>
+            
+            <tag> 博客 </tag>
             
             <tag> wordpress </tag>
             
@@ -451,9 +366,9 @@
       
         <tags>
             
-            <tag> 工具 </tag>
-            
             <tag> 推荐 </tag>
+            
+            <tag> 工具 </tag>
             
             <tag> 代码 </tag>
             
@@ -480,9 +395,9 @@
       
         <tags>
             
-            <tag> 工具 </tag>
-            
             <tag> 推荐 </tag>
+            
+            <tag> 工具 </tag>
             
             <tag> 抠图 </tag>
             

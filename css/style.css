@@ -120,7 +120,7 @@ article code::-webkit-scrollbar-thumb {
   background-color: #888;
 }
 article pre {
-  border-radius: 15px;
+  border-radius: 13px;
   overflow: hidden;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -136,7 +136,7 @@ article pre::before {
   margin-bottom: 0;
   display: block;
 }
-article pre::after {
+article pre:after {
   position: absolute;
   border-radius: 50%;
   background: #ff5f56;
@@ -155,7 +155,7 @@ article pre code {
   font-size: 100%;
   font-family: Consolas;
 }
-article pre code::after {
+article pre code:after {
   color: #5c6370;
   position: absolute;
   top: 0.5em;
@@ -187,7 +187,7 @@ article p {
   margin: 25px 0;
   position: relative;
 }
-article p::after {
+article p:after {
   content: "";
   clear: both;
   display: block;
@@ -218,8 +218,8 @@ article table.nexmoe-album td {
   padding: 5px;
   height: 300px;
 }
-article table.nexmoe-album th a::after,
-article table.nexmoe-album td a::after {
+article table.nexmoe-album th a:after,
+article table.nexmoe-album td a:after {
   display: none;
 }
 @media screen and (max-width: 1024px) {
@@ -243,7 +243,7 @@ article table.nexmoe-album img {
 }
 article img {
   display: block;
-  border-radius: 10px;
+  border-radius: 13px;
   border: 1px solid #eee;
 }
 article img.lazyload,
@@ -304,7 +304,6 @@ article h2:after {
   bottom: -3px;
   left: 0;
   border-radius: 10px;
-  box-shadow: 0 2px 12px rgba(255,78,106,0.85);
 }
 article h2:hover:after {
   width: 2em;
@@ -532,6 +531,43 @@ details[open] > summary .remove {
 .aplayer .aplayer-list ol li.aplayer-list-light {
   background: #f8f8f8 !important;
 }
+.justified-gallery > a > .jg-caption,
+.justified-gallery > div > .jg-caption,
+.justified-gallery > figure > .jg-caption {
+  background-color: transparent;
+}
+.justified-gallery > a > .jg-caption,
+.justified-gallery > div > .jg-caption,
+.justified-gallery > figure > .jg-caption {
+  padding: 10px;
+  transition: all 0.35s ease-out !important;
+}
+.justified-gallery > a > .jg-caption.jg-caption-visible,
+.justified-gallery > div > .jg-caption.jg-caption-visible,
+.justified-gallery > figure > .jg-caption.jg-caption-visible {
+  opacity: 0.99;
+}
+.justified-gallery > a > .jg-caption:after,
+.justified-gallery > div > .jg-caption:after,
+.justified-gallery > figure > .jg-caption:after {
+  background-image: -moz-linear-gradient(to top, rgba(16,16,16,0.35) 25%, rgba(16,16,16,0) 100%);
+  background-image: -webkit-linear-gradient(to top, rgba(16,16,16,0.35) 25%, rgba(16,16,16,0) 100%);
+  background-image: -ms-linear-gradient(to top, rgba(16,16,16,0.35) 25%, rgba(16,16,16,0) 100%);
+  background-image: linear-gradient(to top, rgba(16,16,16,0.35) 25%, rgba(16,16,16,0) 100%);
+  -moz-pointer-events: none;
+  -webkit-pointer-events: none;
+  -ms-pointer-events: none;
+  pointer-events: none;
+  background-size: cover;
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+}
 article.nexmoe-py > *:first-child {
   margin-top: 0 !important;
 }
@@ -619,7 +655,7 @@ article.nexmoe-py ul li img.lazyloaded {
   }
 }
 *,
-*::after,
+*:after,
 *::before {
   box-sizing: border-box;
 }
@@ -727,13 +763,14 @@ body {
   outline: none;
 }
 #nexmoe-header .nexmoe-social {
-  padding: 5px;
+  padding: 12px;
+  font-size: 0;
 }
 #nexmoe-header .nexmoe-social a {
   width: 36px;
   height: 36px;
   line-height: 36px;
-  margin: 5px;
+  margin: 4px;
   border-radius: 100%;
   display: inline-block;
   text-align: center;
@@ -746,7 +783,7 @@ body {
   padding: 0 36px;
   color: #9ca2a8;
   transition: all 0.35s ease-out;
-  border-radius: 15px;
+  border-radius: 13px;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -771,16 +808,16 @@ body {
   box-shadow: 0 0 1rem rgba(161,177,204,0.4);
   background-color: #fff;
   margin: 20px;
-  border-radius: 15px;
+  border-radius: 13px;
   overflow: hidden;
   white-space: normal;
 }
 #nexmoe-header .nexmoe-widget-wrap .nexmoe-widget-title {
-  font-size: 1.2em;
-  font-weight: normal;
-  padding: 12px 10px 10px;
-  border-bottom: 1px solid #eee;
+  font-size: 1em;
+  font-weight: 400;
+  padding: 24px 18px 12px;
   margin: 0;
+  color: #ff4e6a;
 }
 #nexmoe-header .nexmoe-widget-wrap .nexmoe-widget ul {
   list-style-type: none;
@@ -791,18 +828,18 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  border-bottom: 1px solid #eee;
   position: relative;
+  padding: 12px 18px;
 }
 #nexmoe-header .nexmoe-widget-wrap .nexmoe-widget ul li a {
-  padding: 14px 10px;
-  display: block;
   color: #606266;
 }
 #nexmoe-header .nexmoe-widget-wrap .nexmoe-widget ul li:last-child {
   border-bottom: none;
+  padding-bottom: 24px;
 }
-#nexmoe-header .nexmoe-widget-wrap .nexmoe-widget .category-list-count {
+#nexmoe-header .nexmoe-widget-wrap .nexmoe-widget .category-list-count,
+#nexmoe-header .nexmoe-widget-wrap .nexmoe-widget .archive-list-count {
   background-color: rgba(255,78,106,0.1);
   display: inline-block;
   width: 26px;
@@ -812,7 +849,7 @@ body {
   border-radius: 100%;
   color: #ff4e6a;
   position: absolute;
-  right: 10px;
+  right: 18px;
   top: 10px;
 }
 #nexmoe-header .nexmoe-widget-wrap .tagcloud {
@@ -820,7 +857,7 @@ body {
   padding-bottom: 5px;
 }
 #nexmoe-header .nexmoe-widget-wrap .tagcloud a {
-  border-radius: 15px;
+  border-radius: 13px;
   padding: 5px 10px;
   font-size: 12px !important;
   display: inline-block;
@@ -868,7 +905,7 @@ body {
   display: inline-block;
   color: #ddd;
   background-color: #f5f6f5;
-  border-radius: 15px;
+  border-radius: 13px;
   margin-top: -10px;
 }
 #nexmoe-content .nexmoe-primary .nexmoe-page-nav .prev {
@@ -882,7 +919,7 @@ body {
 }
 #nexmoe-content .nexmoe-primary .nexmoe-page-nav > * {
   color: #999;
-  border-radius: 15px;
+  border-radius: 13px;
   width: 35px;
   height: 35px;
   line-height: 35px;
@@ -913,7 +950,7 @@ body {
   padding-bottom: 56.25%;
   position: relative;
   overflow: hidden;
-  border-radius: 15px;
+  border-radius: 16px;
   min-height: 95px;
   background-color: #eee;
 }
@@ -924,8 +961,6 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  border-radius: 15px;
-  border: 1px solid #eee;
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -1016,7 +1051,7 @@ body {
   margin: -25px;
   margin-top: 0;
 }
-#nexmoe-content::after {
+#nexmoe-content:after {
   clear: both;
   display: table;
   content: ' ';
@@ -1108,6 +1143,15 @@ font.douyin {
   display: inline-block;
   top: 0;
 }
+.nexmoe-post-right .nexmoe-tool {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.nexmoe-post-right .nexmoe-tool .mdui-fab {
+  background: #fff;
+  color: #444;
+}
 @media screen and (max-width: 1024px) {
   .nexmoe-post-right {
     margin: 25px 0px;
@@ -1117,13 +1161,17 @@ font.douyin {
     position: relative;
     height: auto;
     border: 1px solid #eee;
-    border-radius: 15px;
+    border-radius: 13px;
+    width: 100%;
+  }
+  .nexmoe-post-right .nexmoe-tool {
+    right: 20px;
   }
   #nexmoe-header .nexmoe-social a {
     margin: 10px;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
   }
 }
 .nexmoe-post-right .nexmoe-toc {
