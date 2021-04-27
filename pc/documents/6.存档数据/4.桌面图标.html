@@ -1,0 +1,78 @@
+<h2 id="桌面图标"><a href="#桌面图标" class="headerlink" title="桌面图标"></a>桌面图标</h2><p>桌面图标是最常用的UI表现形式，它是APP的快捷方式。</p>
+<pre><code class="javascript"><span class="string">"shortcuts"</span>: [
+{
+  <span class="string">"app"</span>: <span class="string">"yl-browser"</span>,
+  <span class="string">"title"</span>: <span class="string">"浏览器"</span>,
+  <span class="string">"params"</span>: {},
+  <span class="string">"hash"</span>: <span class="string">""</span>
+},
+{
+  <span class="string">"app"</span>: <span class="string">"yl-app-store"</span>,
+  <span class="string">"title"</span>: <span class="string">"应用商店"</span>,
+  <span class="string">"params"</span>: {},
+  <span class="string">"hash"</span>: <span class="string">""</span>
+},
+{
+  <span class="string">"app"</span>: <span class="string">"yl-app-home"</span>,
+  <span class="string">"title"</span>: <span class="string">"YLUI 官网"</span>,
+  <span class="string">"params"</span>: {},
+  <span class="string">"hash"</span>: <span class="string">""</span>
+},
+ {
+   <span class="string">"title"</span>: <span class="string">"图标组"</span>,
+   <span class="string">"children"</span>: [
+       {
+           <span class="string">"app"</span>: <span class="string">"yl-server-login"</span>,
+           <span class="string">"title"</span>: <span class="string">"切换用户"</span>,
+           <span class="string">"params"</span>: {},
+           <span class="string">"hash"</span>: <span class="string">""</span>
+       },
+       {
+           <span class="string">"app"</span>: <span class="string">"yl-app-store"</span>,
+           <span class="string">"title"</span>: <span class="string">"应用商店"</span>,
+           <span class="string">"params"</span>: {},
+           <span class="string">"hash"</span>: <span class="string">""</span>
+       },
+       {
+           <span class="string">"app"</span>: <span class="string">"yl-server-import"</span>,
+           <span class="string">"title"</span>: <span class="string">"立即同步"</span>,
+           <span class="string">"params"</span>: {},
+           <span class="string">"hash"</span>: <span class="string">""</span>
+        }
+    ]
+  },       
+  ],</code></pre>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>app</td>
+<td>string</td>
+<td>APP id</td>
+</tr>
+<tr>
+<td>title</td>
+<td>string</td>
+<td>标题文字</td>
+</tr>
+<tr>
+<td>params</td>
+<td>json</td>
+<td>url query 键值对，如<code>{&quot;a&quot;:&quot;A&quot;,&quot;b&quot;:&quot;B&quot;}</code></td>
+</tr>
+<tr>
+<td>hash</td>
+<td>string</td>
+<td>url 锚点</td>
+</tr>
+<tr>
+<td>children</td>
+<td>array</td>
+<td>描述一个图标组，内部包含多个图标。</td>
+</tr>
+</tbody></table>

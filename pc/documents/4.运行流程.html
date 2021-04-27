@@ -1,0 +1,21 @@
+<h2 id="运行流程"><a href="#运行流程" class="headerlink" title="运行流程"></a>运行流程</h2><h3 id="最简模型"><a href="#最简模型" class="headerlink" title="最简模型"></a>最简模型</h3><ol>
+<li>接收到web请求，引入<code>yl.js</code>主文件，建立基本架构</li>
+<li>引入<code>onLoad.js</code>文件，注册<code>onload</code>事件响应函数</li>
+<li>读取<code>basic</code>存档数据，并以此发起系统初始化</li>
+<li>系统读取所需资源，完成初始化，渲染桌面</li>
+<li>响应用户操作</li>
+</ol>
+<h3 id="高级应用"><a href="#高级应用" class="headerlink" title="高级应用"></a>高级应用</h3><p>最简模型往往不能满足我们的需求。定制化改动推荐实现于<code>YL.onLoad</code>函数（位于onLoad.js）。</p>
+<p>例如，我们希望存档数据来源于网络，而不是固定值，则可以用以下代码实现</p>
+<pre><code class="javascript">YL.onLoad(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>{
+    <span class="keyword">var</span> getDataFromServer=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{
+        <span class="comment">//由自己实现，从远程获取存档数据，如ajax、jsonp</span>
+    }
+    <span class="keyword">var</span> data=getDataFromServer(); 
+    YL.init(data);
+    <span class="built_in">console</span>.log(<span class="string">'正在加载数据'</span>);
+}</code></pre>
+<blockquote>
+<p>在之后的文档中我们将学习存档数据的结构，它是整个框架的核心。</p>
+</blockquote>
+<p>又或者我们希望用户在加载完桌面后，通过登录账号，自己选择存档数据，则需要相关API的配合。</p>

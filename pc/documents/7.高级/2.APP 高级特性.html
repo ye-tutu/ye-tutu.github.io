@@ -1,0 +1,94 @@
+<h2 id="APP高级特性"><a href="#APP高级特性" class="headerlink" title="APP高级特性"></a>APP高级特性</h2><p>APP的表现形式不仅仅可以是一个个窗口，还可以为动态壁纸，小工具，后台服务等，取决于开发者的想象力。</p>
+<p>下面我们将以几个特殊APP为例，探索如何利用APP的高级特性。</p>
+<h3 id="便签"><a href="#便签" class="headerlink" title="便签"></a>便签</h3><p>便签用于快速记录信息，设计为一个小窗口，自启动于屏幕右上角。</p>
+<p><img src="../assets/4.png" alt=""></p>
+<ul>
+<li><p>便签作为小工具，需要低调。设置<code>plugin:true</code>，默认隐藏标题栏</p>
+</li>
+<li><p>每次启动自动出现在右上角，设置上对齐，右对齐，偏移4px</p>
+</li>
+<li><p>自启动级别设置为2</p>
+</li>
+<li><p>不需要用户改动url，设置地址栏默认隐藏<code>addressBar: false</code></p>
+</li>
+<li><p>固定一个合适的尺寸宽度250px，高度320px</p>
+<p>​</p>
+</li>
+</ul>
+<p>完整的便签APP数据</p>
+<pre><code class="javascript"><span class="string">"plugin-note"</span>: {
+    <span class="string">"addressBar"</span>: <span class="literal">false</span>,
+    <span class="string">"autoRun"</span>: <span class="number">2</span>,
+    <span class="string">"background"</span>: <span class="literal">false</span>,
+    <span class="string">"badge"</span>: <span class="number">0</span>,
+    <span class="string">"desc"</span>: <span class="string">""</span>,
+    <span class="string">"icon"</span>: {
+        <span class="string">"type"</span>: <span class="string">"fa"</span>,
+        <span class="string">"bg"</span>: <span class="string">"orange"</span>,
+        <span class="string">"content"</span>: <span class="string">"sticky-note-o"</span>
+    },
+    <span class="string">"openMode"</span>: <span class="string">"normal"</span>,
+    <span class="string">"plugin"</span>: <span class="literal">true</span>,
+    <span class="string">"position"</span>: {
+        <span class="string">"x"</span>: <span class="string">"4"</span>,
+        <span class="string">"y"</span>: <span class="string">"4"</span>,
+        <span class="string">"left"</span>: <span class="literal">false</span>,
+        <span class="string">"top"</span>: <span class="literal">true</span>,
+        <span class="string">"autoOffset"</span>: <span class="literal">false</span>
+    },
+    <span class="string">"poweredBy"</span>: <span class="string">"Yuri2"</span>,
+    <span class="string">"resizable"</span>: <span class="literal">true</span>,
+    <span class="string">"single"</span>: <span class="literal">true</span>,
+    <span class="string">"size"</span>: {
+        <span class="string">"width"</span>: <span class="number">250</span>,
+        <span class="string">"height"</span>: <span class="number">326</span>
+    },
+    <span class="string">"title"</span>: <span class="string">"便签"</span>,
+    <span class="string">"url"</span>: <span class="string">"./res/apps/note/index.html"</span>,
+    <span class="string">"customTile"</span>: <span class="string">""</span>
+}</code></pre>
+<h3 id="时钟"><a href="#时钟" class="headerlink" title="时钟"></a>时钟</h3><p>类似于便签，但是时钟不需要交互操作，可以变得更低调。</p>
+<p><img src="../assets/5.png" alt=""></p>
+<p>我们希望用户根本不会触碰到它，设置<code>background:true</code>开启背景模式，让这个时钟成为一个背景装饰。</p>
+<p>完整的时钟APP数据</p>
+<pre><code class="javascript"><span class="string">"plugin-clock"</span>: {
+    <span class="string">"addressBar"</span>: <span class="literal">true</span>,
+    <span class="string">"autoRun"</span>: <span class="number">2</span>,
+    <span class="string">"background"</span>: <span class="literal">true</span>,
+    <span class="string">"badge"</span>: <span class="number">0</span>,
+    <span class="string">"desc"</span>: <span class="string">""</span>,
+    <span class="string">"icon"</span>: {
+        <span class="string">"type"</span>: <span class="string">"fa"</span>,
+        <span class="string">"bg"</span>: <span class="string">"rgb(238,37,96)"</span>,
+        <span class="string">"content"</span>: <span class="string">"clock-o"</span>
+    },
+    <span class="string">"openMode"</span>: <span class="string">"normal"</span>,
+    <span class="string">"plugin"</span>: <span class="literal">true</span>,
+    <span class="string">"position"</span>: {
+        <span class="string">"left"</span>: <span class="literal">false</span>,
+        <span class="string">"top"</span>: <span class="literal">false</span>,
+        <span class="string">"x"</span>: <span class="string">"0"</span>,
+        <span class="string">"y"</span>: <span class="string">"0"</span>
+    },
+    <span class="string">"poweredBy"</span>: <span class="string">"unknown"</span>,
+    <span class="string">"resizable"</span>: <span class="literal">true</span>,
+    <span class="string">"single"</span>: <span class="literal">true</span>,
+    <span class="string">"size"</span>: {
+        <span class="string">"width"</span>: <span class="number">336</span>,
+        <span class="string">"height"</span>: <span class="number">383</span>
+    },
+    <span class="string">"title"</span>: <span class="string">"创意时钟"</span>,
+    <span class="string">"url"</span>: <span class="string">"./res/apps/React Morph Clock/index.html"</span>,
+    <span class="string">"customTile"</span>: <span class="string">""</span>
+}        </code></pre>
+<h3 id="动态壁纸"><a href="#动态壁纸" class="headerlink" title="动态壁纸"></a>动态壁纸</h3><p>那么动态壁纸的特性是什么？</p>
+<ul>
+<li>覆盖整个屏幕</li>
+<li>自动启动</li>
+<li>无交互</li>
+<li>位于最底层</li>
+</ul>
+<p>结合上述两个例子，你是否能写出一个动态壁纸的APP数据？</p>
+<blockquote>
+<p>位于最底层意味着该APP的启动顺序要足够靠前，它优先启动，后启动的的APP才能正确的覆盖在它上方。</p>
+</blockquote>

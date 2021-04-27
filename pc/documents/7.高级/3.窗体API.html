@@ -1,0 +1,275 @@
+<h2 id="窗体API"><a href="#窗体API" class="headerlink" title="窗体API"></a>窗体API</h2><p>窗体API指窗体在运行过程中可以使用的API，得益于YLUI精巧的设计，跨域的窗体也能实现一些强大的功能。</p>
+<blockquote>
+<p>对于同域的窗体，可以使用<code>parent.window</code>来获取父窗体（YLUI主体）的所有全局对象，自然也就可以为所欲为。但是我们依然推荐开发者使用YLUI的窗体API模式，来获取更安全、更低耦合的开发体验。</p>
+</blockquote>
+<h3 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h3><p>首先要使用 窗体API ，我们需要在窗体页面引入js文件：<code>/res/yl.app.js</code>，你可以将这个文件放置在其他位置，只要能正确加载到即可。</p>
+<p>没错，对于最基本的使用，只需要加载yl.app.js文件，你甚至不需要写其他代码。</p>
+<h3 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h3><p>成功接入窗体API 后，窗体将获得以下特性</p>
+<ul>
+<li>支持在YLUI的地址栏中前进后退</li>
+<li>支持F5刷新窗体而不是整个页面</li>
+<li>直接获取同域的，其他子窗体的window对象</li>
+<li>检测窗体是否运行于YLUI框架下，如果是，触发回调</li>
+<li>窗体通信（高级）</li>
+</ul>
+<p><img src="../assets/6.png" alt=""></p>
+<hr>
+<h3 id="YLApp-id"><a href="#YLApp-id" class="headerlink" title="YLApp.id"></a>YLApp.id</h3><p>每个窗体被打开，YLUI都会为它分配一个id。子窗口通过<code>YLApp.id</code>可以获取。</p>
+<p>如果获取后为空，可能是当前APP不是运行在YLUI下，或尚未初始化。</p>
+<h3 id="YLApp-data"><a href="#YLApp-data" class="headerlink" title="YLApp.data"></a>YLApp.data</h3><p>data是这个窗体在被创造时赋予的数据，常被用于窗体通信。</p>
+<blockquote>
+<p>例如，通过这个窗体a新建一个窗体b，可以为b的data赋值<code>parent:a的id</code>来标记创建者。</p>
+</blockquote>
+<h3 id="YLApp-open-url"><a href="#YLApp-open-url" class="headerlink" title="YLApp.open(url)"></a>YLApp.open(url)</h3><p><em>url string 打开新窗体的url地址</em></p>
+<p>立即在YLUI中打开一个新窗口。此处参数只有一个url，简单而常用的一个API。</p>
+<blockquote>
+<p>可以替代传统的a标签打开新窗口。</p>
+</blockquote>
+<h3 id="YLApp-onEvent-cb"><a href="#YLApp-onEvent-cb" class="headerlink" title="YLApp.onEvent(cb)"></a>YLApp.onEvent(cb)</h3><p><em>cb function 回调函数</em></p>
+<p>接受到YLUI事件时触发，cb为事件处理函数（高级）。</p>
+<p>YLUI主体会广播一些公共事件，它们分别为</p>
+<ul>
+<li>dataChanged 存档数据已被用户变更（监听此事件，上传用户的最新存档数据至你的数据库）</li>
+<li>open 某窗体被打开</li>
+<li>close 某窗体被关闭</li>
+<li>desktopMouseMove 桌面鼠标移动</li>
+<li>desktopMouseDown 桌面鼠标按下</li>
+<li>desktopMouseUp 桌面鼠标抬起</li>
+<li>desktopClick 桌面鼠标点击</li>
+<li>resize 主窗体尺寸改变</li>
+</ul>
+<blockquote>
+<p> 未来会加入更多公共事件</p>
+</blockquote>
+<p>###YLApp.getWinObject(id)</p>
+<p><em>id string 目标窗体id</em></p>
+<p><em>return window object</em></p>
+<p>获取指定窗体的window对象，仅在同域有效。</p>
+<h3 id="YLApp-onEvent-cb-1"><a href="#YLApp-onEvent-cb-1" class="headerlink" title="YLApp.onEvent(cb)"></a>YLApp.onEvent(cb)</h3><p><em>cb function 回调函数</em></p>
+<p>接受到YLUI事件时触发，cb为事件处理函数（高级）。</p>
+<h3 id="YLApp-emit-event-data-target"><a href="#YLApp-emit-event-data-target" class="headerlink" title="YLApp.emit(event,data,target)"></a>YLApp.emit(event,data,target)</h3><p><em>event string 事件名</em></p>
+<p><em>data mixed 数据</em></p>
+<p><em>target string|array|true 广播对象</em></p>
+<p>发送一个事件。其中。如果target是string类型，表示发送给对应id的窗口；如果target是数组，表示发送给数组中所有id对应的窗体；如果target为true，表示发送给所有窗体。</p>
+<blockquote>
+<p>特别的，YLUI主体的id为0。</p>
+</blockquote>
+<hr>
+<h3 id="YLApp-eval-method-data-cb"><a href="#YLApp-eval-method-data-cb" class="headerlink" title="YLApp.eval(method,data, cb)"></a>YLApp.eval(method,data, cb)</h3><p><em>method string 方法名</em></p>
+<p><em>data mixed 数据</em></p>
+<p><em>cb function 回调函数</em></p>
+<p>主动向YLUI发布指令或请求数据，完成后触发回调，请求结果会传递到回调函数的第一个参数上。</p>
+<h4 id="YLUI提供了很多方法可供窗体使用，它们统一使用YLApp-eval的形式。"><a href="#YLUI提供了很多方法可供窗体使用，它们统一使用YLApp-eval的形式。" class="headerlink" title="YLUI提供了很多方法可供窗体使用，它们统一使用YLApp.eval的形式。"></a>YLUI提供了很多方法可供窗体使用，它们统一使用<code>YLApp.eval</code>的形式。</h4><blockquote>
+<p>参数为id的方法，如果id为空，则默认是当前窗体的id</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>method</th>
+<th>data</th>
+<th>return</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>getID</td>
+<td></td>
+<td>int</td>
+<td>返回YLUI的一个id流水号</td>
+</tr>
+<tr>
+<td>getVersion</td>
+<td></td>
+<td>string</td>
+<td>返回YLUI的当前版本</td>
+</tr>
+<tr>
+<td>historyBack</td>
+<td>string id</td>
+<td></td>
+<td>指定id窗体后退</td>
+</tr>
+<tr>
+<td>historyBackAvailable</td>
+<td>string id</td>
+<td>bool</td>
+<td>指定id窗体是否可以后退</td>
+</tr>
+<tr>
+<td>historyForward</td>
+<td>string id</td>
+<td></td>
+<td>指定id窗体前进</td>
+</tr>
+<tr>
+<td>historyForwardAvailable</td>
+<td>string id</td>
+<td>bool</td>
+<td>指定id窗体是否可以前进</td>
+</tr>
+<tr>
+<td>refresh</td>
+<td>string id</td>
+<td></td>
+<td>刷新指定id窗体</td>
+</tr>
+<tr>
+<td>setWinData</td>
+<td>object data</td>
+<td></td>
+<td>设置当前窗体的数据</td>
+</tr>
+<tr>
+<td>getWinData</td>
+<td></td>
+<td>object</td>
+<td>获取当前窗体的数据</td>
+</tr>
+<tr>
+<td>setWallpaper</td>
+<td>string urlImg</td>
+<td></td>
+<td>设置壁纸为urlImg图片</td>
+</tr>
+<tr>
+<td>setThemeColor</td>
+<td>string color</td>
+<td></td>
+<td>设置主题色</td>
+</tr>
+<tr>
+<td>getConfigs</td>
+<td></td>
+<td>object</td>
+<td>获取配置</td>
+</tr>
+<tr>
+<td>getRuntime</td>
+<td></td>
+<td>object</td>
+<td>获取运行时数据</td>
+</tr>
+<tr>
+<td>open</td>
+<td>object|array data</td>
+<td>string</td>
+<td>打开窗体，返回窗体id。具体调用方式参看<code>7.1全局API YL.open</code>，其中，data为array对应了<code>YL.open</code>两个参数的用法</td>
+</tr>
+<tr>
+<td>close</td>
+<td>string id</td>
+<td></td>
+<td>关闭指定id的窗体，如果未指定id，关闭本窗体</td>
+</tr>
+<tr>
+<td>minimize</td>
+<td>string id</td>
+<td></td>
+<td>最小化指定id的窗体</td>
+</tr>
+<tr>
+<td>maximize</td>
+<td>string id</td>
+<td></td>
+<td>最大化指定id的窗体</td>
+</tr>
+<tr>
+<td>hide</td>
+<td>string id</td>
+<td></td>
+<td>隐藏指定id的窗体</td>
+</tr>
+<tr>
+<td>show</td>
+<td>string id</td>
+<td></td>
+<td>显示指定id的窗体</td>
+</tr>
+<tr>
+<td>restore</td>
+<td>string id</td>
+<td></td>
+<td>还原指定id的窗体</td>
+</tr>
+<tr>
+<td>msg</td>
+<td>array data</td>
+<td></td>
+<td>推送消息。data[0]为标题，data[1]为正文</td>
+</tr>
+<tr>
+<td>simpleMsg</td>
+<td>string data</td>
+<td></td>
+<td>发送简单的文本提示信息</td>
+</tr>
+<tr>
+<td>setAppBadge</td>
+<td>array|string|int data</td>
+<td>bool</td>
+<td>设置APP的角标值；如果data为数组，data[0]为角标值，data[1]为APP id；如果data为数字或字符串，设置窗口所属APP的角标为data；返回操作是否成功</td>
+</tr>
+<tr>
+<td>getAppVersion</td>
+<td>string id</td>
+<td>string</td>
+<td>返回指定id窗体或当前窗体所属APP的版本号</td>
+</tr>
+<tr>
+<td>uninstall</td>
+<td>string|array data</td>
+<td></td>
+<td>卸载应用。data为string卸载指定id的应用，data为array卸载多个应用</td>
+</tr>
+<tr>
+<td>import</td>
+<td>object data</td>
+<td></td>
+<td>【需要受信任APP权限】导入数据，重载YLUI</td>
+</tr>
+<tr>
+<td>export</td>
+<td></td>
+<td>object</td>
+<td>【需要受信任APP权限】导出YLUI存档数据</td>
+</tr>
+<tr>
+<td>eval</td>
+<td>string data</td>
+<td></td>
+<td>【需要受信任APP权限】在YLUI主体执行eval</td>
+</tr>
+<tr>
+<td>setup</td>
+<td>object data</td>
+<td></td>
+<td>安装。见下文</td>
+</tr>
+</tbody></table>
+<h4 id="setup"><a href="#setup" class="headerlink" title="setup"></a>setup</h4><p>setup是比较复杂而强大的指令，可以为YLUI动态添加APP和快捷方式。利用它你可以很快打造出一个YLUI应用商店。</p>
+<p><img src="../assets/7.png" alt=""></p>
+<p>data 的数据结构如下。其中，每一项不是必须存在的（比如只想添加图标不想添加磁贴，则可以省去tiles属性）。</p>
+<pre><code>{
+    apps:{...},
+    shortcuts:[...],
+    sidebar:[...],
+    tiles:[...],
+    menu:{...},
+}</code></pre><ul>
+<li><p>apps 需要传入多个新增/修改app的数据结构，形如<code>{my_app1_id:{my app1 data ...},my_app2_id:{my app2 data ...}}</code>。</p>
+<blockquote>
+<p>APP的数据格式可以参阅<code>6.3应用程序池</code>。</p>
+</blockquote>
+</li>
+<li><p>shortcuts 需要新增的多个桌面图标数据，形如<code>[{data1 ...},&#39;my_app2_id&#39;]</code>，相当于调用了<code>YL.addShortcut</code>函数。</p>
+</li>
+<li><p>sidebar 需要新增的多个侧边栏按钮的数据，形如<code>[{data1 ...},&#39;my_app2_id&#39;]</code>，相当于调用了<code>YL.addSidebarBtn</code>函数。</p>
+</li>
+<li><p>tiles 需要新增的多个磁贴的数据，形如<code>[{data1 ...},&#39;my_app2_id&#39;]</code>，相当于调用了<code>YL.addTile</code>函数。</p>
+</li>
+<li><p>menu 需要新增的多个菜单项的数据，形如<code>{item1_id:{item1_data ...},item2_id:{item2_data ...}}</code>。</p>
+<blockquote>
+<p>注意菜单项的id不能与其他项重复。菜单项的数据格式可以参阅<code>6.6开始菜单</code>。</p>
+</blockquote>
+</li>
+</ul>

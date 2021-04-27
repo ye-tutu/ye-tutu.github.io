@@ -79,28 +79,14 @@
   </url>
   
   <url>
-    <loc>https://hi-tutu.top/archives/52f397f0/</loc>
-    
-    <lastmod>2020-04-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hi-tutu.top/archives/21447371/</loc>
-    
-    <lastmod>2020-04-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hi-tutu.top/about/index.html</loc>
+    <loc>https://hi-tutu.top/friends/index.html</loc>
     
     <lastmod>2020-04-11</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hi-tutu.top/friends/index.html</loc>
+    <loc>https://hi-tutu.top/about/index.html</loc>
     
     <lastmod>2020-04-11</lastmod>
     
@@ -172,225 +158,197 @@
 
   <url>
     <loc>https://hi-tutu.top/</loc>
-    <lastmod>2021-04-15</lastmod>
+    <lastmod>2021-04-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://hi-tutu.top/tags/%E7%96%AB%E6%83%85/</loc>
-    <lastmod>2021-04-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://hi-tutu.top/tags/%E5%93%80%E6%82%BC/</loc>
-    <lastmod>2021-04-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://hi-tutu.top/tags/python/</loc>
-    <lastmod>2021-04-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://hi-tutu.top/tags/%E4%BB%A3%E7%A0%81/</loc>
-    <lastmod>2021-04-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://hi-tutu.top/tags/2020/</loc>
-    <lastmod>2021-04-15</lastmod>
+    <lastmod>2021-04-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://hi-tutu.top/tags/2021/</loc>
-    <lastmod>2021-04-15</lastmod>
+    <lastmod>2021-04-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://hi-tutu.top/tags/%E6%96%B0%E5%B9%B4%E6%80%BB%E7%BB%93/</loc>
-    <lastmod>2021-04-15</lastmod>
+    <lastmod>2021-04-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://hi-tutu.top/tags/adobe/</loc>
-    <lastmod>2021-04-15</lastmod>
+    <loc>https://hi-tutu.top/tags/%E7%96%AB%E6%83%85/</loc>
+    <lastmod>2021-04-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://hi-tutu.top/tags/Photoshop/</loc>
-    <lastmod>2021-04-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://hi-tutu.top/tags/%E5%BA%94%E7%94%A8/</loc>
-    <lastmod>2021-04-15</lastmod>
+    <loc>https://hi-tutu.top/tags/%E5%93%80%E6%82%BC/</loc>
+    <lastmod>2021-04-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://hi-tutu.top/tags/%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2021-04-15</lastmod>
+    <lastmod>2021-04-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://hi-tutu.top/tags/%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2021-04-15</lastmod>
+    <lastmod>2021-04-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://hi-tutu.top/tags/wordpress/</loc>
-    <lastmod>2021-04-15</lastmod>
+    <lastmod>2021-04-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hi-tutu.top/tags/adobe/</loc>
+    <lastmod>2021-04-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hi-tutu.top/tags/Photoshop/</loc>
+    <lastmod>2021-04-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hi-tutu.top/tags/%E5%BA%94%E7%94%A8/</loc>
+    <lastmod>2021-04-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://hi-tutu.top/tags/%E4%BD%9C%E6%96%87/</loc>
-    <lastmod>2021-04-15</lastmod>
+    <lastmod>2021-04-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://hi-tutu.top/tags/%E6%8E%A8%E8%8D%90/</loc>
-    <lastmod>2021-04-15</lastmod>
+    <lastmod>2021-04-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://hi-tutu.top/tags/%E8%AF%BB%E4%B9%A6/</loc>
-    <lastmod>2021-04-15</lastmod>
+    <loc>https://hi-tutu.top/tags/%E4%BB%A3%E7%A0%81/</loc>
+    <lastmod>2021-04-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://hi-tutu.top/tags/%E8%8A%82%E6%97%A5/</loc>
-    <lastmod>2021-04-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://hi-tutu.top/tags/%E6%9C%AC%E5%9C%B0/</loc>
-    <lastmod>2021-04-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://hi-tutu.top/tags/4399/</loc>
-    <lastmod>2021-04-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://hi-tutu.top/tags/%E5%B0%8F%E6%B8%B8%E6%88%8F/</loc>
-    <lastmod>2021-04-15</lastmod>
+    <loc>https://hi-tutu.top/tags/python/</loc>
+    <lastmod>2021-04-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://hi-tutu.top/tags/exe/</loc>
-    <lastmod>2021-04-15</lastmod>
+    <lastmod>2021-04-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://hi-tutu.top/tags/vmware/</loc>
-    <lastmod>2021-04-15</lastmod>
+    <lastmod>2021-04-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://hi-tutu.top/tags/%E7%B3%BB%E7%BB%9F/</loc>
-    <lastmod>2021-04-15</lastmod>
+    <lastmod>2021-04-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://hi-tutu.top/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/</loc>
-    <lastmod>2021-04-15</lastmod>
+    <lastmod>2021-04-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://hi-tutu.top/tags/%E8%A7%86%E9%A2%91/</loc>
-    <lastmod>2021-04-15</lastmod>
+    <lastmod>2021-04-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://hi-tutu.top/tags/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9/</loc>
-    <lastmod>2021-04-15</lastmod>
+    <lastmod>2021-04-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hi-tutu.top/tags/%E6%9C%AC%E5%9C%B0/</loc>
+    <lastmod>2021-04-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://hi-tutu.top/tags/%E6%8A%A0%E5%9B%BE/</loc>
-    <lastmod>2021-04-15</lastmod>
+    <lastmod>2021-04-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://hi-tutu.top/tags/html/</loc>
-    <lastmod>2021-04-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://hi-tutu.top/tags/TeamViewer/</loc>
-    <lastmod>2021-04-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://hi-tutu.top/tags/%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6/</loc>
-    <lastmod>2021-04-15</lastmod>
+    <lastmod>2021-04-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://hi-tutu.top/tags/%E8%BD%AC%E8%BD%BD/</loc>
-    <lastmod>2021-04-15</lastmod>
+    <lastmod>2021-04-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hi-tutu.top/tags/TeamViewer/</loc>
+    <lastmod>2021-04-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hi-tutu.top/tags/%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6/</loc>
+    <lastmod>2021-04-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -398,36 +356,36 @@
 
   
   <url>
-    <loc>https://hi-tutu.top/categories/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2021-04-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://hi-tutu.top/categories/%E7%BC%96%E7%A8%8B%E4%BB%A3%E7%A0%81/</loc>
-    <lastmod>2021-04-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://hi-tutu.top/categories/%E5%85%B6%E4%BB%96/</loc>
-    <lastmod>2021-04-15</lastmod>
+    <lastmod>2021-04-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://hi-tutu.top/categories/%E5%BA%94%E7%94%A8%E6%8E%A8%E8%8D%90/</loc>
-    <lastmod>2021-04-15</lastmod>
+    <loc>https://hi-tutu.top/categories/%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2021-04-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://hi-tutu.top/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/</loc>
-    <lastmod>2021-04-15</lastmod>
+    <lastmod>2021-04-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hi-tutu.top/categories/%E5%BA%94%E7%94%A8%E6%8E%A8%E8%8D%90/</loc>
+    <lastmod>2021-04-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hi-tutu.top/categories/%E7%BC%96%E7%A8%8B%E4%BB%A3%E7%A0%81/</loc>
+    <lastmod>2021-04-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>

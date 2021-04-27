@@ -1,0 +1,67 @@
+<h2 id="全局API"><a href="#全局API" class="headerlink" title="全局API"></a>全局API</h2><h3 id="YL-init-data"><a href="#YL-init-data" class="headerlink" title="YL.init(data)"></a>YL.init(data)</h3><p><em>data object|null 待加载的数据</em></p>
+<p>初始化 YLUI。如果data不存在，YLUI将尝试用空数据启动。</p>
+<h3 id="YL-import-data"><a href="#YL-import-data" class="headerlink" title="YL.import(data)"></a>YL.import(data)</h3><p><em>data object 待加载的数据</em></p>
+<p>重新加载 YLUI。</p>
+<h3 id="YL-export"><a href="#YL-export" class="headerlink" title="YL.export()"></a>YL.export()</h3><p><em>return object</em></p>
+<p>返回当前数据存档对象。</p>
+<h3 id="YL-lang-key"><a href="#YL-lang-key" class="headerlink" title="YL.lang(key)"></a>YL.lang(key)</h3><p><em>key string 语言字段</em></p>
+<p>返回对应字段的语言数据。语言请参考文件<code>langs/zh-cn.json</code>。</p>
+<h3 id="YL-reset"><a href="#YL-reset" class="headerlink" title="YL.reset()"></a>YL.reset()</h3><p>将YLUI转变为空数据状态。</p>
+<h3 id="YL-msg-title-content"><a href="#YL-msg-title-content" class="headerlink" title="YL.msg(title,content)"></a>YL.msg(title,content)</h3><p><em>title string 标题</em></p>
+<p><em>content string 正文</em></p>
+<p>推送一个消息。</p>
+<h3 id="YL-open-appId-options"><a href="#YL-open-appId-options" class="headerlink" title="YL.open(appId,options)"></a>YL.open(appId,options)</h3><p><em>appId string|object 应用的id或应用数据</em></p>
+<p><em>options object 覆盖应用数据的键值对</em></p>
+<p><em>return string 窗口id</em></p>
+<p>打开一个窗口。如果appId为object，表示appId为一个APP的json数据结构，可以临时打开一个窗口而不依赖已有的APP。</p>
+<h3 id="YL-aboutUs"><a href="#YL-aboutUs" class="headerlink" title="YL.aboutUs()"></a>YL.aboutUs()</h3><p>打开关于窗口。</p>
+<h3 id="YL-uninstall-appId"><a href="#YL-uninstall-appId" class="headerlink" title="YL.uninstall(appId)"></a>YL.uninstall(appId)</h3><p><em>appId string 应用的id</em></p>
+<p>卸载一个应用。</p>
+<h3 id="YL-addApp-appId-data"><a href="#YL-addApp-appId-data" class="headerlink" title="YL.addApp(appId,data)"></a>YL.addApp(appId,data)</h3><p><em>appId string 应用的id</em> </p>
+<p><em>data object 应用的数据</em></p>
+<p><em>return bool 是否成功</em></p>
+<p>添加一个APP。APP数据格式可以参考<code>6.3应用</code>的文档。</p>
+<h3 id="YL-addShortcut-appId"><a href="#YL-addShortcut-appId" class="headerlink" title="YL.addShortcut(appId)"></a>YL.addShortcut(appId)</h3><p><em>appId string|object 应用的id或桌面图标数据</em></p>
+<p>添加一个桌面图标。如果appId 为string，添加对应APP的图标；如果为object，则以此为图标数据创建桌面图标。</p>
+<p>桌面图标的数据格式可以参考<code>6.4桌面图标</code>的文档。</p>
+<h3 id="YL-addMenuItem-appId"><a href="#YL-addMenuItem-appId" class="headerlink" title="YL.addMenuItem(appId)"></a>YL.addMenuItem(appId)</h3><p><em>appId string|object 应用的id或菜单项数据</em> </p>
+<p>添加一个菜单项。如果appId 为string，添加对应APP的菜单项；如果为object，则以此为菜单项数据创建菜单项。</p>
+<p>菜单项的数据格式可以参考<code>6.6开始菜单</code>的文档。</p>
+<h3 id="YL-addSidebarBtn-appId"><a href="#YL-addSidebarBtn-appId" class="headerlink" title="YL.addSidebarBtn(appId)"></a>YL.addSidebarBtn(appId)</h3><p><em>appId string|object 应用的id或侧边栏图标数据</em></p>
+<p>添加一个侧边栏图标。如果appId 为string，添加对应APP的侧边栏图标；如果为object，则以此为侧边栏图标数据创建侧边栏图标。</p>
+<p>侧边栏图标的数据格式可以参考<code>6.6开始菜单</code>的文档。</p>
+<h3 id="YL-addTile-appId-n"><a href="#YL-addTile-appId-n" class="headerlink" title="YL.addTile(appId, n)"></a>YL.addTile(appId, n)</h3><p><em>appId string|object 应用的id或磁贴数据</em></p>
+<p><em>n int 磁贴组位置，默认为0（第一组）</em></p>
+<p>添加一个磁贴。如果appId 为string，添加对应APP的磁贴；如果为object，则以此为磁贴数据创建磁贴。</p>
+<p>磁贴的数据格式可以参考<code>6.5磁贴</code>的文档。</p>
+<h3 id="YL-addTileGroup-groupTitle"><a href="#YL-addTileGroup-groupTitle" class="headerlink" title="YL.addTileGroup(groupTitle)"></a>YL.addTileGroup(groupTitle)</h3><p><em>groupTitle string|null 磁贴组的标题</em> </p>
+<p><em>return int 磁贴组位置</em></p>
+<p>添加磁贴组，返回添加后的位置。</p>
+<h3 id="YL-setThemeColor-color"><a href="#YL-setThemeColor-color" class="headerlink" title="YL.setThemeColor(color)"></a>YL.setThemeColor(color)</h3><p><em>color string 颜色</em> </p>
+<p>设置主题色。</p>
+<h3 id="YL-setWallpaper-urlImg"><a href="#YL-setWallpaper-urlImg" class="headerlink" title="YL.setWallpaper(urlImg)"></a>YL.setWallpaper(urlImg)</h3><p><em>urlImg string 壁纸图片的url</em> </p>
+<p>设置壁纸。</p>
+<h3 id="YL-debug-log"><a href="#YL-debug-log" class="headerlink" title="YL.debug(log)"></a>YL.debug(log)</h3><p><em>log mixed 打印的内容</em></p>
+<p>在debug模式下打印内容。</p>
+<h3 id="YL-onLoad-cb"><a href="#YL-onLoad-cb" class="headerlink" title="YL.onLoad(cb)"></a>YL.onLoad(cb)</h3><p><em>cb function 函数</em></p>
+<p>YLUI加载前将调用cb。此API可以被多次调用。</p>
+<h3 id="YL-onReady-cb"><a href="#YL-onReady-cb" class="headerlink" title="YL.onReady(cb)"></a>YL.onReady(cb)</h3><p><em>cb function 函数</em></p>
+<p><code>YL.init()</code>完毕后将调用cb。此API可以被多次调用。</p>
+<h3 id="YL-f5"><a href="#YL-f5" class="headerlink" title="YL.f5()"></a>YL.f5()</h3><p>重载网页。</p>
+<hr>
+<h3 id="YL-util-isTrustedApp-id"><a href="#YL-util-isTrustedApp-id" class="headerlink" title="YL.util.isTrustedApp(id)"></a>YL.util.isTrustedApp(id)</h3><p><em>appId string 应用的id</em></p>
+<p><em>return bool</em></p>
+<p>应用是否是被信任的。</p>
+<h3 id="YL-util-simpleMsg-msg"><a href="#YL-util-simpleMsg-msg" class="headerlink" title="YL.util.simpleMsg(msg)"></a>YL.util.simpleMsg(msg)</h3><p><em>msg string 消息内容</em></p>
+<p>弹出一个消息框。</p>
+<h3 id="YL-util-simpleConfirm-msg-cb"><a href="#YL-util-simpleConfirm-msg-cb" class="headerlink" title="YL.util.simpleConfirm(msg, cb)"></a>YL.util.simpleConfirm(msg, cb)</h3><p><em>msg string 消息内容</em></p>
+<p><em>cb function 回调函数</em></p>
+<p>弹出一个确认框。</p>
+<h3 id="YL-util-getID"><a href="#YL-util-getID" class="headerlink" title="YL.util.getID()"></a>YL.util.getID()</h3><p><em>return int</em></p>
+<p>返回一个不重复的数字（递增）。</p>
+<h3 id="YL-util-getRandomColor"><a href="#YL-util-getRandomColor" class="headerlink" title="YL.util.getRandomColor()"></a>YL.util.getRandomColor()</h3><p><em>return string</em></p>
+<p>返回一个随机颜色。</p>
+<h3 id="YL-util-getAppDataTemplate"><a href="#YL-util-getAppDataTemplate" class="headerlink" title="YL.util.getAppDataTemplate()"></a>YL.util.getAppDataTemplate()</h3><p><em>return object</em></p>
+<p>返回一个APP数据模板。</p>
+<h3 id="YL-util-enableFullScreen"><a href="#YL-util-enableFullScreen" class="headerlink" title="YL.util.enableFullScreen()"></a>YL.util.enableFullScreen()</h3><p>进入全屏。</p>
+<h3 id="YL-util-disableFullScreen"><a href="#YL-util-disableFullScreen" class="headerlink" title="YL.util.disableFullScreen()"></a>YL.util.disableFullScreen()</h3><p>退出全屏。</p>

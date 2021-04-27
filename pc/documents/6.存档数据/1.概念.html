@@ -1,0 +1,358 @@
+<h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>类似于单机游戏的存档，存档数据记录了当前系统运行状态，并能随时还原为这一状态，便于用户将自己的桌面状态保存或上传到远程服务器上，并能随时同步还原。</p>
+<p>另外，如果开发者熟悉存档数据结构，能够通过编写程序批量修改存档数据。</p>
+<h3 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h3><p>存档数据以JSON格式存在，保证了数据传输过程中的可序列化。<br>如果用js对象转化为JSON字符串，请保证这种转化是完全可逆的。</p>
+<blockquote>
+<p>js对象可以被JSON.stringify转化为JSON字符串，但是如果js对象成员中有函数，无限嵌套，带方法的对象等复杂的成员，则它的数据很可能会丢失。合法的存档数据应该由一系列的键名-&gt;键值(字符串、数字)及层级关系组成，是可以无损序列化的。</p>
+</blockquote>
+<p>JSON数据的最外层形式如下，其中，<code>...</code>表示内部内容被省略。</p>
+<pre><code class="json">{
+  &quot;configs&quot;: {...},
+  &quot;apps&quot;: {...},
+  &quot;shortcuts&quot;: [...],
+  &quot;tiles&quot;:[...],
+  &quot;startMenu&quot;: {...}
+}</code></pre>
+<table>
+<thead>
+<tr>
+<th>键名</th>
+<th>意义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>configs</td>
+<td>运行配置</td>
+</tr>
+<tr>
+<td>apps</td>
+<td>应用程序池</td>
+</tr>
+<tr>
+<td>shortcuts</td>
+<td>桌面图标数据</td>
+</tr>
+<tr>
+<td>tiles</td>
+<td>磁贴数据</td>
+</tr>
+<tr>
+<td>startMenu</td>
+<td>开始菜单数据</td>
+</tr>
+</tbody></table>
+<h3 id="快速上手"><a href="#快速上手" class="headerlink" title="快速上手"></a>快速上手</h3><p>官方的存档数据basic.json可以渲染出一个简单的、标准的桌面，参考此文件可以基本理解存档数据的结构。</p>
+<p><img src="../assets/1.png" alt="1523414358437"></p>
+<p>附<code>basic.json</code>代码（v1.0.0）</p>
+<pre><code class="json">{
+  <span class="attr">"configs"</span>: {
+    <span class="attr">"topTaskBar"</span>: <span class="literal">false</span>,
+    <span class="attr">"pathRes"</span>: <span class="string">"./res"</span>,
+    <span class="attr">"sound"</span>: <span class="literal">false</span>,
+    <span class="attr">"shortcutsSortAuto"</span>: <span class="literal">true</span>,
+    <span class="attr">"wallpaper"</span>: <span class="string">"./res/img/wallpapers/bg1.jpg"</span>,
+    <span class="attr">"wallpaperBlur"</span>: <span class="literal">true</span>,
+    <span class="attr">"wallpaperSlide"</span>: <span class="literal">false</span>,
+    <span class="attr">"wallpaperSlideRandom"</span>: <span class="literal">true</span>,
+    <span class="attr">"wallpaperSlideItv"</span>: <span class="number">1</span>,
+    <span class="attr">"wallpaperSlideTime"</span>: <span class="number">1519442460788</span>,
+    <span class="attr">"wallpaperSlideIndex"</span>: <span class="number">8</span>,
+    <span class="attr">"openMax"</span>: <span class="number">9</span>,
+    <span class="attr">"idCounter"</span>: <span class="number">94</span>,
+    <span class="attr">"themeColor"</span>: <span class="string">"rgba(2,35,64,1)"</span>,
+    <span class="attr">"autoThemeColor"</span>: <span class="literal">true</span>,
+    <span class="attr">"wallpapers"</span>: [
+      {
+        <span class="attr">"image"</span>: <span class="string">"./res/img/wallpapers/bg1.jpg"</span>,
+        <span class="attr">"preview"</span>: <span class="string">"./res/img/wallpapers/bg1_1.jpg"</span>
+      },
+      {
+        <span class="attr">"image"</span>: <span class="string">"./res/img/wallpapers/bg2.jpg"</span>,
+        <span class="attr">"preview"</span>: <span class="string">"./res/img/wallpapers/bg2_1.jpg"</span>
+      },
+      {
+        <span class="attr">"image"</span>: <span class="string">"./res/img/wallpapers/bg3.jpg"</span>,
+        <span class="attr">"preview"</span>: <span class="string">"./res/img/wallpapers/bg3_1.jpg"</span>
+      },
+    ],
+    <span class="attr">"debug"</span>: <span class="literal">false</span>,
+    <span class="attr">"winBlur"</span>: <span class="literal">true</span>
+  },
+  <span class="attr">"apps"</span>: {
+    <span class="attr">"yl-system"</span>: {
+      <span class="attr">"addressBar"</span>: <span class="literal">false</span>,
+      <span class="attr">"autoRun"</span>: <span class="number">0</span>,
+      <span class="attr">"background"</span>: <span class="literal">false</span>,
+      <span class="attr">"badge"</span>: <span class="number">0</span>,
+      <span class="attr">"desc"</span>: <span class="string">"YL-UI 系统设置面板"</span>,
+      <span class="attr">"icon"</span>: {
+        <span class="attr">"type"</span>: <span class="string">"fa"</span>,
+        <span class="attr">"bg"</span>: <span class="string">"gray"</span>,
+        <span class="attr">"content"</span>: <span class="string">"gear"</span>
+      },
+      <span class="attr">"openMode"</span>: <span class="string">"normal"</span>,
+      <span class="attr">"plugin"</span>: <span class="literal">false</span>,
+      <span class="attr">"position"</span>: {
+        <span class="attr">"x"</span>: <span class="string">"(x-860)/2"</span>,
+        <span class="attr">"y"</span>: <span class="string">"y*0.1"</span>,
+        <span class="attr">"left"</span>: <span class="literal">true</span>,
+        <span class="attr">"top"</span>: <span class="literal">true</span>,
+        <span class="attr">"autoOffset"</span>: <span class="literal">false</span>
+      },
+      <span class="attr">"poweredBy"</span>: <span class="string">"Yuri2"</span>,
+      <span class="attr">"resizable"</span>: <span class="literal">true</span>,
+      <span class="attr">"single"</span>: <span class="literal">true</span>,
+      <span class="attr">"size"</span>: {
+        <span class="attr">"width"</span>: <span class="string">"860"</span>,
+        <span class="attr">"height"</span>: <span class="string">"y*0.8"</span>
+      },
+      <span class="attr">"title"</span>: <span class="string">"系统设置"</span>,
+      <span class="attr">"url"</span>: <span class="string">"./res/apps/system/index.html"</span>,
+      <span class="attr">"customTile"</span>: <span class="string">""</span>
+    },
+    <span class="attr">"yl-color-picker"</span>: {
+      <span class="attr">"addressBar"</span>: <span class="literal">false</span>,
+      <span class="attr">"autoRun"</span>: <span class="number">0</span>,
+      <span class="attr">"background"</span>: <span class="literal">false</span>,
+      <span class="attr">"badge"</span>: <span class="number">0</span>,
+      <span class="attr">"desc"</span>: <span class="string">"简单的取色器"</span>,
+      <span class="attr">"icon"</span>: {
+        <span class="attr">"type"</span>: <span class="string">"fa"</span>,
+        <span class="attr">"bg"</span>: <span class="string">"#3289c7"</span>,
+        <span class="attr">"content"</span>: <span class="string">"eyedropper"</span>
+      },
+      <span class="attr">"openMode"</span>: <span class="string">"normal"</span>,
+      <span class="attr">"plugin"</span>: <span class="literal">false</span>,
+      <span class="attr">"position"</span>: {
+        <span class="attr">"x"</span>: <span class="string">"(x-207)/2"</span>,
+        <span class="attr">"y"</span>: <span class="string">"(y-239)/2"</span>,
+        <span class="attr">"left"</span>: <span class="literal">true</span>,
+        <span class="attr">"top"</span>: <span class="literal">true</span>,
+        <span class="attr">"autoOffset"</span>: <span class="literal">false</span>
+      },
+      <span class="attr">"poweredBy"</span>: <span class="string">"Yuri2"</span>,
+      <span class="attr">"resizable"</span>: <span class="literal">false</span>,
+      <span class="attr">"single"</span>: <span class="literal">true</span>,
+      <span class="attr">"size"</span>: {
+        <span class="attr">"width"</span>: <span class="string">"207"</span>,
+        <span class="attr">"height"</span>: <span class="string">"239"</span>
+      },
+      <span class="attr">"title"</span>: <span class="string">"取色器"</span>,
+      <span class="attr">"url"</span>: <span class="string">"./res/apps/colorPicker/colorPicker.html"</span>,
+      <span class="attr">"customTile"</span>: <span class="string">""</span>
+    },
+    <span class="attr">"yl-browser"</span>: {
+      <span class="attr">"addressBar"</span>: <span class="literal">true</span>,
+      <span class="attr">"autoRun"</span>: <span class="number">0</span>,
+      <span class="attr">"background"</span>: <span class="literal">false</span>,
+      <span class="attr">"badge"</span>: <span class="number">0</span>,
+      <span class="attr">"desc"</span>: <span class="string">"浏览器"</span>,
+      <span class="attr">"icon"</span>: {
+        <span class="attr">"type"</span>: <span class="string">"fa"</span>,
+        <span class="attr">"content"</span>: <span class="string">"internet-explorer"</span>,
+        <span class="attr">"bg"</span>: <span class="string">"#3a55c2"</span>
+      },
+      <span class="attr">"openMode"</span>: <span class="string">"normal"</span>,
+      <span class="attr">"plugin"</span>: <span class="literal">false</span>,
+      <span class="attr">"position"</span>: {
+        <span class="attr">"autoOffset"</span>: <span class="literal">true</span>,
+        <span class="attr">"left"</span>: <span class="literal">true</span>,
+        <span class="attr">"top"</span>: <span class="literal">true</span>,
+        <span class="attr">"x"</span>: <span class="string">"x*0.1"</span>,
+        <span class="attr">"y"</span>: <span class="string">"y*0.1"</span>
+      },
+      <span class="attr">"poweredBy"</span>: <span class="string">"Yuri2"</span>,
+      <span class="attr">"resizable"</span>: <span class="literal">true</span>,
+      <span class="attr">"single"</span>: <span class="literal">false</span>,
+      <span class="attr">"size"</span>: {
+        <span class="attr">"height"</span>: <span class="string">"y*0.8"</span>,
+        <span class="attr">"width"</span>: <span class="string">"x*0.8"</span>
+      },
+      <span class="attr">"title"</span>: <span class="string">"浏览器"</span>,
+      <span class="attr">"url"</span>: <span class="string">"./res/apps/browser/index.html"</span>,
+      <span class="attr">"customTile"</span>: <span class="string">""</span>
+    },
+    <span class="attr">"yl-server-import"</span>: {
+      <span class="attr">"addressBar"</span>: <span class="literal">false</span>,
+      <span class="attr">"autoRun"</span>: <span class="number">0</span>,
+      <span class="attr">"background"</span>: <span class="literal">false</span>,
+      <span class="attr">"badge"</span>: <span class="number">0</span>,
+      <span class="attr">"desc"</span>: <span class="string">""</span>,
+      <span class="attr">"icon"</span>: {
+        <span class="attr">"type"</span>: <span class="string">"fa"</span>,
+        <span class="attr">"content"</span>: <span class="string">"cloud"</span>,
+        <span class="attr">"bg"</span>: <span class="string">"#4da85b"</span>
+      },
+      <span class="attr">"openMode"</span>: <span class="string">"normal"</span>,
+      <span class="attr">"plugin"</span>: <span class="literal">false</span>,
+      <span class="attr">"position"</span>: {
+        <span class="attr">"autoOffset"</span>: <span class="literal">true</span>,
+        <span class="attr">"left"</span>: <span class="literal">true</span>,
+        <span class="attr">"top"</span>: <span class="literal">true</span>,
+        <span class="attr">"x"</span>: <span class="string">"x*0.1"</span>,
+        <span class="attr">"y"</span>: <span class="string">"y*0.1"</span>
+      },
+      <span class="attr">"poweredBy"</span>: <span class="string">"Yuri2"</span>,
+      <span class="attr">"resizable"</span>: <span class="literal">true</span>,
+      <span class="attr">"single"</span>: <span class="literal">true</span>,
+      <span class="attr">"size"</span>: {
+        <span class="attr">"height"</span>: <span class="string">"y*0.8"</span>,
+        <span class="attr">"width"</span>: <span class="string">"x*0.8"</span>
+      },
+      <span class="attr">"title"</span>: <span class="string">"YLUI云服务-同步"</span>,
+      <span class="attr">"url"</span>: <span class="string">"https://ylui.yuri2.cn/index.php/home/main/import"</span>,
+      <span class="attr">"customTile"</span>: <span class="string">""</span>
+    },
+    <span class="attr">"yl-server-login"</span>: {
+      <span class="attr">"addressBar"</span>: <span class="literal">false</span>,
+      <span class="attr">"autoRun"</span>: <span class="number">0</span>,
+      <span class="attr">"background"</span>: <span class="literal">false</span>,
+      <span class="attr">"badge"</span>: <span class="number">0</span>,
+      <span class="attr">"desc"</span>: <span class="string">""</span>,
+      <span class="attr">"icon"</span>: {
+        <span class="attr">"type"</span>: <span class="string">"fa"</span>,
+        <span class="attr">"content"</span>: <span class="string">"cloud"</span>,
+        <span class="attr">"bg"</span>: <span class="string">"#4da85b"</span>
+      },
+      <span class="attr">"openMode"</span>: <span class="string">"normal"</span>,
+      <span class="attr">"plugin"</span>: <span class="literal">false</span>,
+      <span class="attr">"position"</span>: {
+        <span class="attr">"autoOffset"</span>: <span class="literal">true</span>,
+        <span class="attr">"left"</span>: <span class="literal">true</span>,
+        <span class="attr">"top"</span>: <span class="literal">true</span>,
+        <span class="attr">"x"</span>: <span class="string">"x*0.1"</span>,
+        <span class="attr">"y"</span>: <span class="string">"y*0.1"</span>
+      },
+      <span class="attr">"poweredBy"</span>: <span class="string">"Yuri2"</span>,
+      <span class="attr">"resizable"</span>: <span class="literal">true</span>,
+      <span class="attr">"single"</span>: <span class="literal">true</span>,
+      <span class="attr">"size"</span>: {
+        <span class="attr">"height"</span>: <span class="string">"y*0.8"</span>,
+        <span class="attr">"width"</span>: <span class="string">"x*0.8"</span>
+      },
+      <span class="attr">"title"</span>: <span class="string">"YLUI云服务-登录"</span>,
+      <span class="attr">"url"</span>: <span class="string">"https://ylui.yuri2.cn/index.php/home/main/login"</span>,
+      <span class="attr">"customTile"</span>: <span class="string">""</span>
+    },
+    <span class="attr">"yl-app-store"</span>: {
+      <span class="attr">"addressBar"</span>: <span class="literal">false</span>,
+      <span class="attr">"autoRun"</span>: <span class="number">0</span>,
+      <span class="attr">"background"</span>: <span class="literal">false</span>,
+      <span class="attr">"badge"</span>: <span class="number">0</span>,
+      <span class="attr">"desc"</span>: <span class="string">""</span>,
+      <span class="attr">"icon"</span>: {
+        <span class="attr">"type"</span>: <span class="string">"fa"</span>,
+        <span class="attr">"content"</span>: <span class="string">"shopping-bag"</span>,
+        <span class="attr">"bg"</span>: <span class="string">"#b36aba"</span>
+      },
+      <span class="attr">"openMode"</span>: <span class="string">"normal"</span>,
+      <span class="attr">"plugin"</span>: <span class="literal">false</span>,
+      <span class="attr">"position"</span>: {
+        <span class="attr">"autoOffset"</span>: <span class="literal">true</span>,
+        <span class="attr">"left"</span>: <span class="literal">true</span>,
+        <span class="attr">"top"</span>: <span class="literal">true</span>,
+        <span class="attr">"x"</span>: <span class="string">"x*0.1"</span>,
+        <span class="attr">"y"</span>: <span class="string">"y*0.1"</span>
+      },
+      <span class="attr">"poweredBy"</span>: <span class="string">"Yuri2"</span>,
+      <span class="attr">"resizable"</span>: <span class="literal">true</span>,
+      <span class="attr">"single"</span>: <span class="literal">true</span>,
+      <span class="attr">"size"</span>: {
+        <span class="attr">"height"</span>: <span class="string">"y*0.8"</span>,
+        <span class="attr">"width"</span>: <span class="string">"x*0.8"</span>
+      },
+      <span class="attr">"title"</span>: <span class="string">"应用商店"</span>,
+      <span class="attr">"url"</span>: <span class="string">"./res/apps/app-store/index.html"</span>,
+      <span class="attr">"customTile"</span>: <span class="string">""</span>
+    }
+  },
+  <span class="attr">"shortcuts"</span>: [
+    {
+      <span class="attr">"app"</span>: <span class="string">"yl-browser"</span>,
+      <span class="attr">"title"</span>: <span class="string">"浏览器"</span>,
+      <span class="attr">"params"</span>: {},
+      <span class="attr">"hash"</span>: <span class="string">""</span>
+    },
+    {
+      <span class="attr">"app"</span>: <span class="string">"yl-server-login"</span>,
+      <span class="attr">"title"</span>: <span class="string">"切换用户"</span>,
+      <span class="attr">"params"</span>: {},
+      <span class="attr">"hash"</span>: <span class="string">""</span>
+    },
+    {
+      <span class="attr">"app"</span>: <span class="string">"yl-server-import"</span>,
+      <span class="attr">"title"</span>: <span class="string">"立即同步"</span>,
+      <span class="attr">"params"</span>: {},
+      <span class="attr">"hash"</span>: <span class="string">""</span>
+    },
+    {
+      <span class="attr">"app"</span>: <span class="string">"yl-app-store"</span>,
+      <span class="attr">"title"</span>: <span class="string">"应用商店"</span>,
+      <span class="attr">"params"</span>: {},
+      <span class="attr">"hash"</span>: <span class="string">""</span>
+    }
+  ],
+  <span class="attr">"tiles"</span>: [
+    {
+      <span class="attr">"title"</span>: <span class="string">"系统"</span>,
+      <span class="attr">"data"</span>: [
+        {
+          <span class="attr">"x"</span>: <span class="number">0</span>,
+          <span class="attr">"y"</span>: <span class="number">0</span>,
+          <span class="attr">"w"</span>: <span class="number">6</span>,
+          <span class="attr">"h"</span>: <span class="number">3</span>,
+          <span class="attr">"app"</span>: <span class="string">"yl-app-store"</span>,
+          <span class="attr">"title"</span>: <span class="string">"应用商店"</span>,
+          <span class="attr">"i"</span>: <span class="string">"91"</span>,
+          <span class="attr">"params"</span>: {},
+          <span class="attr">"hash"</span>: <span class="string">""</span>
+        }
+      ]
+    }
+  ],
+  <span class="attr">"startMenu"</span>: {
+    <span class="attr">"sidebar"</span>: [
+      {
+        <span class="attr">"app"</span>: <span class="string">"yl-browser"</span>,
+        <span class="attr">"title"</span>: <span class="string">"浏览器"</span>,
+        <span class="attr">"params"</span>: {},
+        <span class="attr">"hash"</span>: <span class="string">""</span>
+      },
+      {
+        <span class="attr">"app"</span>: <span class="string">"yl-system"</span>,
+        <span class="attr">"title"</span>: <span class="string">"系统设置"</span>
+      }
+    ],
+    <span class="attr">"menu"</span>: {
+      <span class="attr">"itemPushed-85"</span>: {
+        <span class="attr">"app"</span>: <span class="string">"yl-browser"</span>,
+        <span class="attr">"title"</span>: <span class="string">"浏览器"</span>,
+        <span class="attr">"params"</span>: {},
+        <span class="attr">"hash"</span>: <span class="string">""</span>
+      },
+      <span class="attr">"itemPushed-86"</span>: {
+        <span class="attr">"app"</span>: <span class="string">"yl-server-login"</span>,
+        <span class="attr">"title"</span>: <span class="string">"切换用户"</span>,
+        <span class="attr">"params"</span>: {},
+        <span class="attr">"hash"</span>: <span class="string">""</span>
+      },
+      <span class="attr">"itemPushed-87"</span>: {
+        <span class="attr">"app"</span>: <span class="string">"yl-server-import"</span>,
+        <span class="attr">"title"</span>: <span class="string">"立即同步"</span>,
+        <span class="attr">"params"</span>: {},
+        <span class="attr">"hash"</span>: <span class="string">""</span>
+      },
+      <span class="attr">"itemPushed-88"</span>: {
+        <span class="attr">"app"</span>: <span class="string">"yl-app-store"</span>,
+        <span class="attr">"title"</span>: <span class="string">"应用商店"</span>,
+        <span class="attr">"params"</span>: {},
+        <span class="attr">"hash"</span>: <span class="string">""</span>
+      },
+      <span class="attr">"itemPushed-89"</span>: {
+        <span class="attr">"app"</span>: <span class="string">"yl-system"</span>,
+        <span class="attr">"title"</span>: <span class="string">"系统设置"</span>,
+        <span class="attr">"params"</span>: {},
+        <span class="attr">"hash"</span>: <span class="string">""</span>
+      }
+    }
+  }
+}</code></pre>
